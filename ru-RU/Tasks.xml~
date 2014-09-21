@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
-<section id="sect_tasks">
-    <title>Варианты заданий</title>
-    <para>Для получения задания к лабораторной работе воспользуйтесь приложением TaskGen. Укажите свое полное имя, например &quot;Иванов Иван Иванович&quot; и выберите в выпадающем списке тему настоящей работы. Нажмите кнопку &quot;Мой вариант&quot; - будет сгенерирован набор задач. Условия задач см. в соответствующих задачниках.</para>
-</section>
