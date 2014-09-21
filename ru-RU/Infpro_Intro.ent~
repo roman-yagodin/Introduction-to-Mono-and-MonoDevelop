@@ -1,0 +1,5 @@
+<!ENTITY PRODUCT "Documentation">
+<!ENTITY BOOKID "Introduction to MonoDevelop IDE">
+<!ENTITY BOOKID_RU "Знакомство с интегрированной средой разработки MonoDevelop">
+<!ENTITY YEAR "2011">
+<!ENTITY HOLDER "| You need to change the HOLDER entity in the ru-RU/Infpro_Intro.ent file |">

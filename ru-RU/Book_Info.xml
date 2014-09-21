@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE bookinfo PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Infpro_Intro.ent">
+%BOOK_ENTITIES;
+]>
+<bookinfo id="book-Infpro_Intro-Infpro_Intro">
+  <title>Знакомство с интегрированной средой разработки MonoDevelop</title>
+  <subtitle>Учебная тема</subtitle>
+  <productname>R7 Educational Suite</productname>
+  <productnumber>0.1</productnumber>
+  <edition>121015</edition>
+  <pubsnumber>4</pubsnumber>
+  <abstract>
+    <para>В рамках данной темы студенты знакомятся с интегрированной средой разработки приложений MonoDevelop. получают практические навыки работы с редактором кода, отладчиком и другими инструментами. Одновременно с этим,  они осваивают основные приемы работы с виртуальной машиной, в которой развернута рабочая среда курса. В теоретической части приводятся краткие сведения о платформе .NET / Mono,     языке C#. Студенты изучают структуру программного проекта, учатся компилировать, искать ошибки, запускать,  останавливать и отлаживать программы.</para>
+  </abstract>
+  <corpauthor>
+    <inlinemediaobject>
+      <imageobject>
+        <imagedata fileref="Common_Content/images/title_logo.svg" format="SVG"/>
+      </imageobject>
+      <textobject>
+        <phrase>Logo</phrase>
+      </textobject>
+    </inlinemediaobject>
+  </corpauthor>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Common_Content/Legal_Notice.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Author_Group.xml"/>
+</bookinfo>

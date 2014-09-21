@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="sect_execution_order">
+    <title>Порядок выполнения</title>
+    <orderedlist>
+        <listitem>
+          <para>Изучите теоретический материал и приведенные в теме примеры.</para>
+        </listitem>
+        <listitem>
+          <para>Самостоятельно ответьте на контрольные вопросы и вопросы по тексту темы.</para>
+        </listitem>
+        <listitem>
+          <para>Пройдите тест-коллоквиум по теме в системе дистанционного обучения.</para>
+          <note>
+            <para>Система дистанционного обучения &quot;Прометей&quot; доступна по адресу <ulink url="http://sdo.volgau.com/">http://sdo.volgau.com/</ulink> Для входа в систему необходимо иметь [и помнить] свой логин и пароль.</para>
+          </note>
+        </listitem>
+        <listitem>
+          <para>Выполните <xref linkend="sect_tasks" xreflabel="практические задания"/>, написав и
+        отладив требуемые программы.</para>
+        </listitem>
+        <listitem>
+          <para>Составьте отчет о проделанной работе в соответствии с <xref linkend="sect_report"
+          xreflabel="требованиями"/>.</para>
+        </listitem>
+        <listitem>
+          <para><xref linkend="sect_report_acceptance" xreflabel="Отчитайтесь"/> о выполнении работы
+        преподавателю.</para>
+        </listitem>
+    </orderedlist>
+</section>

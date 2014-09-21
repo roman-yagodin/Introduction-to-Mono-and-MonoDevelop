@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+ <section id="sect_tasks">
+      <title>Практические задания</title>
+      <formalpara>
+        <title>Задание</title>
+        <para>Создайте решение из трех проектов&#160;- трех консольных приложений на языке C#. В проектах наберите тексты указанных ниже программ. Исправьте возможные при наборе ошибки, запустите программы.</para>
+      </formalpara>
+      <note>
+        <para>Копировать код из текста методички не рекомендуется&#160;- ваша цель отработать именно набор текста в редакторе, &quot;почувствовать&quot; синтаксис языка и научиться исправлять типичные при наборе кода ошибки. </para>
+        <para>Поэкспериментируйте с редактором текста - отработайте приемы копирования, вырезания и вставки теста; сворачивания и развертывания блоков кода. Обратите внимание, что основные команды для работы с текстом находятся в меню <menuchoice>
+            <guisubmenu>Edit</guisubmenu>
+          </menuchoice> среды разработки.</para>
+        <para>При наборе текста примеров используйте вставку шаблонов кода в текст программы. Используйте шаблоны <code>if</code>, <code>ife</code>, <code>while</code>, <code>switch</code>, <code>switchd</code>, <code>trycf</code>, <code>foreach</code>. Выясните, можно ли автоматически поместить выделенные строки внутрь скобок шаблона, без копирования и вставки?</para>
+      </note>
+      <important>
+        <para>Код, приведенный ниже, нужно набрать внутри фигурных скобок <code>{}</code>  после заголовка функции <code>Main()</code> в стандартном шаблоне консольного приложения. Весь остальной код изменять [пока что] нельзя!</para>
+      </important>
+      <example>
+        <title>Генератор простых чисел</title>
+        <programlisting language="C#"><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="extras/simple_numbers.cs" parse="text"/></programlisting>
+      </example>
+      <example>
+        <title>Проверка, является ли слово палиндромом</title>
+        <programlisting language="C#"><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="extras/palindrom.cs" parse="text" encoding="UTF-8"/></programlisting>
+      </example>      <example>
+        <title>Генератор паролей</title>
+        <programlisting language="C#"><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="extras/password_generator.cs" parse="text" encoding="UTF-8"/></programlisting>
+      </example>
+      <para>В созданных проектах (и в процессе их создания) проведите исследования рассмотренных возможностей интегрированной среды разработки. В частности, не лишним будет проделать следующее:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Освойте приемы быстрого набора кода программы с помощью функций автодополнения и шаблонов кода.</para>
+        </listitem>
+        <listitem>
+          <para>Выясните, можно ли автоматически поместить выделенные строки внутрь скобок шаблона, без копирования и вставки?</para>
+        </listitem>
+        <listitem>
+          <para>Изучите применение команды Format Document к исходному коду ваших программ.</para>
+        </listitem>
+        <listitem>
+          <para>Поэкспериментируйте с командами поиска-замены по тексту, используя пункты меню и &quot;быстрые&quot; клавиши. </para>
+        </listitem>
+        <listitem>
+          <para>Проверьте, как работает команда <guimenuitem>Go to Matching Brace</guimenuitem> на примере фигурных  <code>{}</code> и круглых <code>()</code>   и квадратных <code>[]</code> скобок в тексте программы.</para>
+        </listitem>
+        <listitem>
+          <para>Измените цветовую схему редактора кода и шрифт на удобные для вас.</para>
+        </listitem>
+        <listitem>
+          <para>Изучите способы добавления в проект новых и существующих файлов, удаления файлов из проекта.</para>
+        </listitem>
+        <listitem>
+          <para>Изучите возможность добавления в решение проектов разных типов.</para>
+        </listitem>
+        <listitem>
+          <para>Разберитесь, в чем разница между компиляцией и запуском программы на выполнение; чем отличается запуск в режиме отладки и запуск без отладки.</para>
+        </listitem>
+      </itemizedlist>
+    </section>

@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="456"
+   height="569.49023"
+   id="svg2">
+  <defs
+     id="defs4">
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="SquareL"
+       style="overflow:visible">
+      <path
+         d="M -5,-5 -5,5 5,5 5,-5 -5,-5 z"
+         inkscape:connector-curvature="0"
+         transform="scale(0.8,0.8)"
+         id="path3916"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="DotL"
+       style="overflow:visible">
+      <path
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         inkscape:connector-curvature="0"
+         transform="matrix(0.8,0,0,0.8,5.92,0.8)"
+         id="path3907"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none;marker-end:none" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="DotM"
+       style="overflow:visible">
+      <path
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         inkscape:connector-curvature="0"
+         transform="matrix(0.4,0,0,0.4,2.96,0.4)"
+         id="path3910"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none;marker-end:none" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         id="path3848"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mstart"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         inkscape:connector-curvature="0"
+         transform="matrix(0.4,0,0,0.4,4,0)"
+         id="path3851"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3854"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lend-8"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         id="path3848-9"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none" />
+    </marker>
+    <filter
+       x="-0.25"
+       y="-0.25"
+       width="1.5"
+       height="1.5"
+       color-interpolation-filters="sRGB"
+       id="filter7283">
+      <feGaussianBlur
+         result="blur"
+         stdDeviation="1"
+         in="SourceAlpha"
+         id="feGaussianBlur7285" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 "
+         type="matrix"
+         result="bluralpha"
+         id="feColorMatrix7287" />
+      <feOffset
+         result="offsetBlur"
+         dy="1"
+         dx="1"
+         in="bluralpha"
+         id="feOffset7289" />
+      <feMerge
+         id="feMerge7291">
+        <feMergeNode
+           in="offsetBlur"
+           id="feMergeNode7293" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode7295" />
+      </feMerge>
+    </filter>
+    <filter
+       x="-0.25"
+       y="-0.25"
+       width="1.5"
+       height="1.5"
+       color-interpolation-filters="sRGB"
+       id="filter7297">
+      <feGaussianBlur
+         result="blur"
+         stdDeviation="1"
+         in="SourceAlpha"
+         id="feGaussianBlur7299" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 "
+         type="matrix"
+         result="bluralpha"
+         id="feColorMatrix7301" />
+      <feOffset
+         result="offsetBlur"
+         dy="1"
+         dx="1"
+         in="bluralpha"
+         id="feOffset7303" />
+      <feMerge
+         id="feMerge7305">
+        <feMergeNode
+           in="offsetBlur"
+           id="feMergeNode7307" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode7309" />
+      </feMerge>
+    </filter>
+    <filter
+       x="-0.25"
+       y="-0.25"
+       width="1.5"
+       height="1.5"
+       color-interpolation-filters="sRGB"
+       id="filter7325">
+      <feGaussianBlur
+         result="blur"
+         stdDeviation="1"
+         in="SourceAlpha"
+         id="feGaussianBlur7327" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 "
+         type="matrix"
+         result="bluralpha"
+         id="feColorMatrix7329" />
+      <feOffset
+         result="offsetBlur"
+         dy="1"
+         dx="1"
+         in="bluralpha"
+         id="feOffset7331" />
+      <feMerge
+         id="feMerge7333">
+        <feMergeNode
+           in="offsetBlur"
+           id="feMergeNode7335" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode7337" />
+      </feMerge>
+    </filter>
+    <filter
+       x="-0.25"
+       y="-0.25"
+       width="1.5"
+       height="1.5"
+       color-interpolation-filters="sRGB"
+       id="filter7339">
+      <feGaussianBlur
+         result="blur"
+         stdDeviation="1"
+         in="SourceAlpha"
+         id="feGaussianBlur7341" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 "
+         type="matrix"
+         result="bluralpha"
+         id="feColorMatrix7343" />
+      <feOffset
+         result="offsetBlur"
+         dy="1"
+         dx="1"
+         in="bluralpha"
+         id="feOffset7345" />
+      <feMerge
+         id="feMerge7347">
+        <feMergeNode
+           in="offsetBlur"
+           id="feMergeNode7349" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode7351" />
+      </feMerge>
+    </filter>
+    <filter
+       x="-0.25"
+       y="-0.25"
+       width="1.5"
+       height="1.5"
+       color-interpolation-filters="sRGB"
+       id="filter7353">
+      <feGaussianBlur
+         result="blur"
+         stdDeviation="1"
+         in="SourceAlpha"
+         id="feGaussianBlur7355" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 "
+         type="matrix"
+         result="bluralpha"
+         id="feColorMatrix7357" />
+      <feOffset
+         result="offsetBlur"
+         dy="1"
+         dx="1"
+         in="bluralpha"
+         id="feOffset7359" />
+      <feMerge
+         id="feMerge7361">
+        <feMergeNode
+           in="offsetBlur"
+           id="feMergeNode7363" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode7365" />
+      </feMerge>
+    </filter>
+    <filter
+       x="-0.25"
+       y="-0.25"
+       width="1.5"
+       height="1.5"
+       color-interpolation-filters="sRGB"
+       id="filter7367">
+      <feGaussianBlur
+         result="blur"
+         stdDeviation="1"
+         in="SourceAlpha"
+         id="feGaussianBlur7369" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 "
+         type="matrix"
+         result="bluralpha"
+         id="feColorMatrix7371" />
+      <feOffset
+         result="offsetBlur"
+         dy="1"
+         dx="1"
+         in="bluralpha"
+         id="feOffset7373" />
+      <feMerge
+         id="feMerge7375">
+        <feMergeNode
+           in="offsetBlur"
+           id="feMergeNode7377" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode7379" />
+      </feMerge>
+    </filter>
+    <filter
+       x="-0.25"
+       y="-0.25"
+       width="1.5"
+       height="1.5"
+       color-interpolation-filters="sRGB"
+       id="filter7381">
+      <feGaussianBlur
+         result="blur"
+         stdDeviation="1"
+         in="SourceAlpha"
+         id="feGaussianBlur7383" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 "
+         type="matrix"
+         result="bluralpha"
+         id="feColorMatrix7385" />
+      <feOffset
+         result="offsetBlur"
+         dy="1"
+         dx="1"
+         in="bluralpha"
+         id="feOffset7387" />
+      <feMerge
+         id="feMerge7389">
+        <feMergeNode
+           in="offsetBlur"
+           id="feMergeNode7391" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode7393" />
+      </feMerge>
+    </filter>
+    <filter
+       x="-0.25"
+       y="-0.25"
+       width="1.5"
+       height="1.5"
+       color-interpolation-filters="sRGB"
+       id="filter7395">
+      <feGaussianBlur
+         result="blur"
+         stdDeviation="1"
+         in="SourceAlpha"
+         id="feGaussianBlur7397" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 "
+         type="matrix"
+         result="bluralpha"
+         id="feColorMatrix7399" />
+      <feOffset
+         result="offsetBlur"
+         dy="1"
+         dx="1"
+         in="bluralpha"
+         id="feOffset7401" />
+      <feMerge
+         id="feMerge7403">
+        <feMergeNode
+           in="offsetBlur"
+           id="feMergeNode7405" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode7407" />
+      </feMerge>
+    </filter>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-7"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3854-5"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-172.5,-44.862183)"
+     id="layer1">
+    <rect
+       width="77"
+       height="70"
+       x="198"
+       y="67.362183"
+       transform="matrix(1.3463203,0,0,1,-79.571429,0)"
+       id="rect2982"
+       style="fill:#ffff00;fill-opacity:1;stroke:none;filter:url(#filter7283)" />
+    <text
+       x="301"
+       y="78.362183"
+       id="text2984"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="301"
+         y="78.362183"
+         id="tspan2986"
+         style="font-size:12px">Исходный код </tspan><tspan
+         x="301"
+         y="93.362183"
+         id="tspan7413"
+         style="font-size:12px">на языке C</tspan></text>
+    <rect
+       width="421"
+       height="146"
+       rx="10"
+       ry="10"
+       x="183.5"
+       y="164.35242"
+       id="rect7415"
+       style="fill:#fffafa;stroke:#000000;stroke-width:0.99999988;stroke-miterlimit:4;stroke-dasharray:0.99999999, 0.99999999;stroke-dashoffset:0" />
+    <path
+       d="m 424,177.36218 a 43,43 0 1 1 -86,0 43,43 0 1 1 86,0 z"
+       transform="translate(-144,61)"
+       id="path2988"
+       style="fill:#ffff00;fill-opacity:1;stroke:none;filter:url(#filter7297)" />
+    <path
+       d="m 424,177.36218 a 43,43 0 1 1 -86,0 43,43 0 1 1 86,0 z"
+       transform="translate(14,203)"
+       id="path2988-8"
+       style="fill:#ffc0cb;fill-opacity:1;stroke:none;filter:url(#filter7367)" />
+    <path
+       d="m 424,177.36218 a 43,43 0 1 1 -86,0 43,43 0 1 1 86,0 z"
+       transform="translate(168,61)"
+       id="path2988-8-1"
+       style="fill:#dcdcdc;fill-opacity:1;stroke:none;filter:url(#filter7339)" />
+    <text
+       x="237.20605"
+       y="237.9071"
+       id="text2984-9"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="237.20605"
+         y="237.9071"
+         id="tspan2986-6"
+         style="font-size:11px;text-align:center;text-anchor:middle">Компилятор</tspan><tspan
+         x="237.20605"
+         y="251.6571"
+         id="tspan10072"
+         style="font-size:11px;text-align:center;text-anchor:middle">языка С</tspan></text>
+    <text
+       x="517"
+       y="242.36218"
+       id="text3047"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="517"
+         y="242.36218"
+         id="tspan3049"
+         style="font-size:12px">Ассемблер</tspan></text>
+    <text
+       x="372.04395"
+       y="384.48816"
+       id="text2984-9-2"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="372.04395"
+         y="384.48816"
+         id="tspan2986-6-9"
+         style="font-size:12px">Линкер</tspan></text>
+    <rect
+       width="77"
+       height="70"
+       x="511.5"
+       y="345.36218"
+       id="rect2982-5"
+       style="fill:#66cdaa;fill-opacity:1;stroke:none;filter:url(#filter7381)" />
+    <path
+       d="m 238.36151,137.36218 -0.78191,58.00383"
+       inkscape:connection-start="#rect2982"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#path2988"
+       inkscape:connection-end-point="d4"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path4706"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-8)" />
+    <text
+       x="514.34766"
+       y="433.9071"
+       id="text2984-4"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="514.34766"
+         y="433.9071"
+         id="tspan2986-9"
+         style="font-size:12px">Объектный </tspan><tspan
+         x="514.34766"
+         y="448.9071"
+         id="tspan7019"
+         style="font-size:12px">машинный код</tspan></text>
+    <text
+       x="527"
+       y="384.36218"
+       id="text5105"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="527"
+         y="384.36218"
+         id="tspan5107"
+         style="font-size:22px">.OBJ</tspan></text>
+    <text
+       x="205.95801"
+       y="104.3241"
+       id="text5105-9"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="205.95801"
+         y="104.3241"
+         id="tspan5107-9"
+         style="font-size:22px">.C, .H</tspan></text>
+    <rect
+       width="77"
+       height="70"
+       x="355.5"
+       y="203.36218"
+       id="rect2982-8"
+       style="fill:#dcdcdc;fill-opacity:1;stroke:none;filter:url(#filter7325)" />
+    <text
+       x="358.59375"
+       y="179.19421"
+       id="text2984-4-1"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="358.59375"
+         y="179.19421"
+         id="tspan2986-9-0"
+         style="font-size:12px">Исходный код</tspan><tspan
+         x="358.59375"
+         y="194.19421"
+         id="tspan5169"
+         style="font-size:12px">на языке ассемблера</tspan></text>
+    <text
+       x="365.95801"
+       y="241.3241"
+       id="text5105-0"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="365.95801"
+         y="241.3241"
+         id="tspan5107-0"
+         style="font-size:22px">.ASM</tspan></text>
+    <rect
+       width="77"
+       height="70"
+       x="195.5"
+       y="345.36218"
+       id="rect2982-8-7"
+       style="fill:#db7093;fill-opacity:1;stroke:none;filter:url(#filter7353)" />
+    <rect
+       width="77"
+       height="70"
+       x="356.5"
+       y="488.36218"
+       id="rect2982-8-7-5"
+       style="fill:#98fb98;fill-opacity:1;stroke:none;filter:url(#filter7395)" />
+    <text
+       x="369.40332"
+       y="526.37048"
+       id="text5105-0-6"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="369.40332"
+         y="526.37048"
+         id="tspan5107-0-3"
+         style="font-size:22px">.EXE</tspan></text>
+    <text
+       x="195.04395"
+       y="432.48816"
+       id="text2984-9-6"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="195.04395"
+         y="432.48816"
+         id="tspan2986-6-97"
+         style="font-size:12px">Внешние статические</tspan><tspan
+         x="195.04395"
+         y="447.48816"
+         id="tspan7047"
+         style="font-size:12px">библиотеки (объектный</tspan><tspan
+         x="195.04395"
+         y="462.48816"
+         id="tspan7411"
+         style="font-size:12px">машинный код)</tspan></text>
+    <path
+       d="m 432.5,238.36218 73.5,0"
+       inkscape:connection-start="#rect2982-8"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#path2988-8-1"
+       inkscape:connection-end-point="d4"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path5288"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-8)" />
+    <path
+       d="m 272.5,380.36218 79.5,0"
+       inkscape:connection-start="#rect2982-8-7"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#path2988-8"
+       inkscape:connection-end-point="d4"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path5290"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-8)" />
+    <path
+       d="m 511.5,380.36218 -73.5,0"
+       inkscape:connection-start="#rect2982-5"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#path2988-8"
+       inkscape:connection-end-point="d4"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path5294"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-8)" />
+    <path
+       d="m 395,423.36218 0,65"
+       inkscape:connection-start="#path2988-8"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#rect2982-8-7-5"
+       inkscape:connection-end-point="d4"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path5298"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-8)" />
+    <path
+       d="m 548.60557,281.35801 0.90147,64.00417"
+       inkscape:connection-end="#rect2982-5"
+       inkscape:connection-end-point="d4"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path6804"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-8)" />
+    <text
+       x="210.95801"
+       y="384.3241"
+       id="text5105-6"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="210.95801"
+         y="384.3241"
+         id="tspan5107-8"
+         style="font-size:22px">.LIB</tspan></text>
+    <text
+       x="358.53906"
+       y="577.69421"
+       id="text2984-4-2"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="358.53906"
+         y="577.69421"
+         id="tspan7019-0"
+         style="font-size:12px">Исполнимый </tspan><tspan
+         x="358.53906"
+         y="592.69421"
+         id="tspan7077"
+         style="font-size:12px">машинный код</tspan></text>
+    <path
+       d="m 280,238.36218 75.5,0"
+       inkscape:connection-start="#path2988"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#rect2982-8"
+       inkscape:connection-end-point="d4"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path7079"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-8)" />
+    <g
+       id="g7734"
+       style="fill:#98fb98;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0">
+      <path
+         d="m 505.58791,526.71247 23.16423,32.83713 75.31513,-27.57409 -28.06771,-28.06326 z"
+         id="path7738"
+         style="fill:#4d4d9f;fill-rule:evenodd;stroke:none" />
+      <path
+         d="m 505.58791,526.71247 0,-18.62576 70.41165,-21.45749 0,17.28303 z"
+         id="path7736"
+         style="fill:#353564;fill-rule:evenodd;stroke:none" />
+      <path
+         d="m 575.99956,503.91225 28.06771,28.06326 0,-18.93571 -28.06771,-26.41058 z"
+         id="path7746"
+         style="fill:#e9e9ff;fill-rule:evenodd;stroke:none" />
+      <path
+         d="m 505.58791,508.08671 23.16423,30.9033 75.31513,-25.95021 -28.06771,-26.41058 z"
+         id="path7744"
+         style="fill:#afafde;fill-rule:evenodd;stroke:none" />
+      <path
+         d="m 528.75214,559.5496 0,-20.55959 75.31513,-25.95021 0,18.93571 z"
+         id="path7742"
+         style="fill:#d7d7ff;fill-rule:evenodd;stroke:none" />
+      <path
+         d="m 505.58791,526.71247 23.16423,32.83713 0,-20.55959 -23.16423,-30.9033 z"
+         id="path7740"
+         style="fill:#8686bf;fill-rule:evenodd;stroke:none" />
+    </g>
+    <text
+       x="519.85315"
+       y="515.17432"
+       id="text2984-4-2-8-0"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="519.85315"
+         y="515.17432"
+         id="tspan7077-0-4"
+         style="font-size:11px">Процессор</tspan></text>
+    <path
+       d="m 261,478.43429 72.08791,-0.12303"
+       inkscape:connection-start="#rect2982-8-7-5"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#g7734"
+       inkscape:connection-end-point="d4"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       transform="translate(172.5,44.862183)"
+       id="path9211"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:none;marker-end:url(#Arrow1Lend-8)" />
+    <text
+       x="191.5"
+       y="301.35242"
+       id="text9933"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="191.5"
+         y="301.35242"
+         id="tspan9935"
+         style="font-style:italic;-inkscape-font-specification:Sans Italic">Внутри компилятора</tspan></text>
+    <text
+       x="518.79834"
+       y="407.99255"
+       id="text8935-7-1"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="518.79834"
+         y="407.99255"
+         id="tspan8943-6-6">0110100101</tspan></text>
+    <text
+       x="202.79834"
+       y="405.99255"
+       id="text8935-7-1-6"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="202.79834"
+         y="405.99255"
+         id="tspan8943-6-6-1">0110100101</tspan></text>
+    <text
+       x="358.79834"
+       y="266.99255"
+       id="text8935-7-1-7"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="358.79834"
+         y="266.99255"
+         id="tspan8943-6-6-8">mov ax, [sum]</tspan></text>
+    <text
+       x="194.22803"
+       y="130.49207"
+       id="text8935-7-1-7-3"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="194.22803"
+         y="130.49207"
+         id="tspan8943-6-6-8-6">printf(&quot;%d&quot;, sum);</tspan></text>
+    <text
+       x="363.79834"
+       y="551.99255"
+       id="text8935-7-1-3"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="363.79834"
+         y="551.99255"
+         id="tspan8943-6-6-0">0110100101</tspan></text>
+    <text
+       x="495.99341"
+       y="594.9314"
+       id="text10122"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="495.99341"
+         y="594.9314"
+         id="tspan10124"
+         style="font-size:10px;font-style:italic;-inkscape-font-specification:Sans Italic">Запуск программы</tspan></text>
+    <path
+       d="m 499.99342,580.93138 -36,-56"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path10126"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 3;stroke-dashoffset:0;marker-end:url(#Arrow1Mend)" />
+  </g>
+</svg>

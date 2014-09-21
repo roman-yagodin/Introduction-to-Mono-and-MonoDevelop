@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE authorgroup PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Infpro_Intro.ent">
+%BOOK_ENTITIES;
+]>
+<authorgroup>
+  <author>
+    <firstname>Роман</firstname>
+    <othername>М.</othername>
+    <surname>Ягодин</surname>
+    <affiliation>
+      <orgname>ВолгоградскийГАУ</orgname>
+      <orgdiv>Кафедра &quot;Информационные системы и технологии&quot;</orgdiv>
+    </affiliation>
+    <email>roman.yagodin@gmail.com</email>
+  </author>
+</authorgroup>

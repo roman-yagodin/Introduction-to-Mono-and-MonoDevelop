@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="468.5"
+   height="626.00781"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="dotnet_compiler.svg"
+   inkscape:export-filename="/media/Data/Publican/Books/Infpro_Intro/ru-RU/images/dotnet_compiler.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-51.8253 : 362.0687 : 1"
+       inkscape:vp_y="0 : 722.45215 : 0"
+       inkscape:vp_z="1147.9987 : 362.0687 : 1"
+       inkscape:persp3d-origin="548.08671 : 235.35514 : 1"
+       id="perspective5231" />
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         id="path3848"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart"
+       style="overflow:visible">
+      <path
+         id="path3851"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         id="path3854"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-8"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3848-9"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <filter
+       id="filter7283"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur7285"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix7287"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 " />
+      <feOffset
+         id="feOffset7289"
+         in="bluralpha"
+         dx="1"
+         dy="1"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge7291">
+        <feMergeNode
+           id="feMergeNode7293"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode7295"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter7297"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur7299"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix7301"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 " />
+      <feOffset
+         id="feOffset7303"
+         in="bluralpha"
+         dx="1"
+         dy="1"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge7305">
+        <feMergeNode
+           id="feMergeNode7307"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode7309"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter7325"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur7327"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix7329"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 " />
+      <feOffset
+         id="feOffset7331"
+         in="bluralpha"
+         dx="1"
+         dy="1"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge7333">
+        <feMergeNode
+           id="feMergeNode7335"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode7337"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter7339"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur7341"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix7343"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 " />
+      <feOffset
+         id="feOffset7345"
+         in="bluralpha"
+         dx="1"
+         dy="1"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge7347">
+        <feMergeNode
+           id="feMergeNode7349"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode7351"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter7353"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur7355"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix7357"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 " />
+      <feOffset
+         id="feOffset7359"
+         in="bluralpha"
+         dx="1"
+         dy="1"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge7361">
+        <feMergeNode
+           id="feMergeNode7363"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode7365"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter7367"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur7369"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix7371"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 " />
+      <feOffset
+         id="feOffset7373"
+         in="bluralpha"
+         dx="1"
+         dy="1"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge7375">
+        <feMergeNode
+           id="feMergeNode7377"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode7379"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter7381"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur7383"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix7385"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 " />
+      <feOffset
+         id="feOffset7387"
+         in="bluralpha"
+         dx="1"
+         dy="1"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge7389">
+        <feMergeNode
+           id="feMergeNode7391"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode7393"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter7395"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur7397"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix7399"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 " />
+      <feOffset
+         id="feOffset7401"
+         in="bluralpha"
+         dx="1"
+         dy="1"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge7403">
+        <feMergeNode
+           id="feMergeNode7405"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode7407"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter7395-6"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur7397-7"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix7399-0"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 " />
+      <feOffset
+         id="feOffset7401-1"
+         in="bluralpha"
+         dx="1"
+         dy="1"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge7403-0">
+        <feMergeNode
+           id="feMergeNode7405-5"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode7407-3"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter7297-5"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur7299-8"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix7301-4"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 " />
+      <feOffset
+         id="feOffset7303-8"
+         in="bluralpha"
+         dx="1"
+         dy="1"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge7305-2">
+        <feMergeNode
+           id="feMergeNode7307-4"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode7309-3"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter7395-6-2"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur7397-7-7"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix7399-0-0"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 " />
+      <feOffset
+         id="feOffset7401-1-9"
+         in="bluralpha"
+         dx="1"
+         dy="1"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge7403-0-6">
+        <feMergeNode
+           id="feMergeNode7405-5-5"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode7407-3-4"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter7633"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur7635"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix7637"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 " />
+      <feOffset
+         id="feOffset7639"
+         in="bluralpha"
+         dx="1"
+         dy="1"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge7641">
+        <feMergeNode
+           id="feMergeNode7643"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode7645"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter7633-6"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25">
+      <feGaussianBlur
+         id="feGaussianBlur7635-1"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix7637-1"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 " />
+      <feOffset
+         id="feOffset7639-6"
+         in="bluralpha"
+         dx="1"
+         dy="1"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge7641-3">
+        <feMergeNode
+           id="feMergeNode7643-9"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode7645-0"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter7633-6-5"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-0.25"
+       y="-0.25">
+      <feGaussianBlur
+         id="feGaussianBlur7635-1-5"
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix7637-1-8"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.33 0 " />
+      <feOffset
+         id="feOffset7639-6-3"
+         in="bluralpha"
+         dx="1"
+         dy="1"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge7641-3-0">
+        <feMergeNode
+           id="feMergeNode7643-9-8"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode7645-0-7"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="171.0085"
+     inkscape:cy="423.78736"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="774"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="10"
+     fit-margin-bottom="55"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-166.5,-44.862183)">
+    <rect
+       style="fill:#ffff00;fill-opacity:1;stroke:none;filter:url(#filter7283)"
+       id="rect2982"
+       width="77"
+       height="70"
+       x="198"
+       y="67.362183" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="286"
+       y="78.362183"
+       id="text2984"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2986"
+         x="286"
+         y="78.362183"
+         style="font-size:12px">Исходный код </tspan><tspan
+         sodipodi:role="line"
+         x="286"
+         y="93.362183"
+         style="font-size:12px"
+         id="tspan7413">на языке C#</tspan></text>
+    <g
+       id="g7798"
+       transform="translate(-5,6)">
+      <path
+         transform="translate(-140,41)"
+         d="m 424,177.36218 a 43,43 0 1 1 -86,0 43,43 0 1 1 86,0 z"
+         sodipodi:ry="43"
+         sodipodi:rx="43"
+         sodipodi:cy="177.36218"
+         sodipodi:cx="381"
+         id="path2988"
+         style="fill:#ffff00;fill-opacity:1;stroke:none;filter:url(#filter7297)"
+         sodipodi:type="arc" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2984-9"
+         y="217.9071"
+         x="241.20605"
+         style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:11px;text-align:center;text-anchor:middle"
+           y="217.9071"
+           x="241.20605"
+           id="tspan2986-6"
+           sodipodi:role="line">Компилятор</tspan><tspan
+           style="font-size:11px;text-align:center;text-anchor:middle"
+           y="231.6571"
+           x="241.20605"
+           sodipodi:role="line"
+           id="tspan10010">языка C#</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="215.95801"
+       y="95.324097"
+       id="text5105-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5107-9"
+         x="215.95801"
+         y="95.324097"
+         style="font-size:22px">.CS</tspan></text>
+    <rect
+       style="fill:#fdf5e6;stroke:#000000;stroke-width:0.99999994;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 2.00000002;stroke-dashoffset:0"
+       id="rect7787"
+       width="446"
+       height="260"
+       x="178.5"
+       y="295.35242"
+       rx="10"
+       ry="10" />
+    <rect
+       style="fill:#db7093;fill-opacity:1;stroke:none;filter:url(#filter7353)"
+       id="rect2982-8-7"
+       width="77"
+       height="70"
+       x="195.5"
+       y="345.36218" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="195.04395"
+       y="435.48816"
+       id="text2984-9-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2986-6-97"
+         x="195.04395"
+         y="435.48816"
+         style="font-size:12px">Внешние </tspan><tspan
+         sodipodi:role="line"
+         x="195.04395"
+         y="450.48816"
+         style="font-size:12px"
+         id="tspan7411">сборки и системные</tspan><tspan
+         sodipodi:role="line"
+         x="195.04395"
+         y="465.48816"
+         style="font-size:12px"
+         id="tspan7494">библиотеки </tspan><tspan
+         sodipodi:role="line"
+         x="195.04395"
+         y="480.48816"
+         style="font-size:12px"
+         id="tspan10008">(двоичный код CIL)</tspan></text>
+    <rect
+       style="fill:#98fb98;fill-opacity:1;stroke:none;filter:url(#filter7395-6)"
+       id="rect2982-8-7-5"
+       width="77"
+       height="70"
+       x="347.98145"
+       y="189.1073" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="359.88477"
+       y="224.1156"
+       id="text5105-0-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5107-0-3"
+         x="359.88477"
+         y="224.1156"
+         style="font-size:22px">.EXE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="435.02051"
+       y="200.43933"
+       id="text2984-4-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="435.02051"
+         y="200.43933"
+         style="font-size:12px"
+         id="tspan7019-0">Сборка</tspan><tspan
+         sodipodi:role="line"
+         x="435.02051"
+         y="215.43933"
+         style="font-size:12px"
+         id="tspan11898">(двоичный </tspan><tspan
+         sodipodi:role="line"
+         x="435.02051"
+         y="230.43933"
+         style="font-size:12px"
+         id="tspan7077">код CIL)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="208.07324"
+       y="384.37146"
+       id="text5105-0-6-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5107-0-3-7"
+         x="208.07324"
+         y="384.37146"
+         style="font-size:22px">.DLL</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffa500;fill-opacity:1;stroke:none;filter:url(#filter7297-5)"
+       id="path2988-83"
+       sodipodi:cx="381"
+       sodipodi:cy="177.36218"
+       sodipodi:rx="43"
+       sodipodi:ry="43"
+       d="m 424,177.36218 a 43,43 0 1 1 -86,0 43,43 0 1 1 86,0 z"
+       transform="translate(5.5,201.99023)" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="388.71143"
+       y="373.89734"
+       id="text2984-9-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2986-6-2"
+         x="388.71143"
+         y="373.89734"
+         style="font-size:11px;text-align:center;text-anchor:middle">JIT-</tspan><tspan
+         sodipodi:role="line"
+         x="388.71143"
+         y="387.64734"
+         style="font-size:11px;text-align:center;text-anchor:middle"
+         id="tspan7569">компилятор</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-8)"
+       d="m 106.49994,179.42717 68.98151,-0.11684"
+       id="path7573"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path2988"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#rect2982-8-7-5"
+       inkscape:connection-end-point="d4"
+       transform="translate(172.5,44.862183)" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="432.03906"
+       y="493.43933"
+       id="text2984-4-2-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="432.03906"
+         y="493.43933"
+         style="font-size:12px"
+         id="tspan7019-0-3">Исполнимый </tspan><tspan
+         sodipodi:role="line"
+         x="432.03906"
+         y="508.43933"
+         style="font-size:12px"
+         id="tspan7077-0">машинный код</tspan></text>
+    <g
+       id="g7725"
+       transform="translate(-183,111)">
+      <rect
+         y="355.47299"
+         x="536.47314"
+         height="45.917465"
+         width="50.958549"
+         id="rect2982-8-7-5-4"
+         style="fill:#98fb98;fill-opacity:1;stroke:none;filter:url(#filter7633)" />
+      <rect
+         y="364.39368"
+         x="544.02075"
+         height="45.917465"
+         width="50.958549"
+         id="rect2982-8-7-5-4-5"
+         style="fill:#90ee90;fill-opacity:1;stroke:none;filter:url(#filter7633-6)" />
+      <rect
+         y="373.39368"
+         x="554.02075"
+         height="45.917465"
+         width="50.958549"
+         id="rect2982-8-7-5-4-5-2"
+         style="fill:#98fb98;fill-opacity:1;stroke:none;filter:url(#filter7633-6-5)" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-8)"
+       d="m 214.44292,377.488 0.45451,44.12281"
+       id="path7730"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path2988-83"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#g7725"
+       inkscape:connection-end-point="d4"
+       transform="translate(172.5,44.862183)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-8)"
+       d="m 100,335.24507 71.00092,-0.47012"
+       id="path7732"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#rect2982-8-7"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#path2988-83"
+       inkscape:connection-end-point="d4"
+       transform="translate(172.5,44.862183)" />
+    <g
+       sodipodi:type="inkscape:box3d"
+       style="fill:#98fb98;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0"
+       id="g7734"
+       inkscape:perspectiveID="#perspective5231"
+       inkscape:corner0="1.6888836 : -1.0017398 : 0 : 1"
+       inkscape:corner7="1.4359689 : -0.93241687 : 0.20890197 : 1">
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path7738"
+         style="fill:#4d4d9f;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="5"
+         d="m 337.78291,625.0748 23.16423,32.83712 75.31513,-27.57408 -28.06771,-28.06327 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path7736"
+         style="fill:#353564;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="6"
+         d="m 337.78291,625.0748 0,-18.62576 70.41165,-21.45749 0,17.28302 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path7746"
+         style="fill:#e9e9ff;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="11"
+         d="m 408.19456,602.27457 28.06771,28.06327 0,-18.93571 -28.06771,-26.41058 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path7744"
+         style="fill:#afafde;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="13"
+         d="m 337.78291,606.44904 23.16423,30.9033 75.31513,-25.95021 -28.06771,-26.41058 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path7742"
+         style="fill:#d7d7ff;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="14"
+         d="m 360.94714,657.91192 0,-20.55958 75.31513,-25.95021 0,18.93571 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path7740"
+         style="fill:#8686bf;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="3"
+         d="m 337.78291,625.0748 23.16423,32.83712 0,-20.55958 -23.16423,-30.9033 z" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="352.83105"
+       y="614.58191"
+       id="text2984-4-2-8-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="352.83105"
+         y="614.58191"
+         style="font-size:11px"
+         id="tspan7077-0-4">Процессор</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="612.74023"
+       y="314.35242"
+       id="text7789"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7791"
+         x="616.56055"
+         y="314.35242"
+         style="font-size:12px;text-align:end;text-anchor:end">Общеязыковая среда </tspan><tspan
+         sodipodi:role="line"
+         x="612.74023"
+         y="329.35242"
+         style="font-size:12px;text-align:end;text-anchor:end"
+         id="tspan8933">исполнения (CLR)</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-8)"
+       d="m 237.35656,137.36218 -0.18193,44.39126"
+       id="path7803"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="374.5"
+       y="498.56207"
+       id="text8935"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8937"
+         x="374.5"
+         y="498.56207">0110100</tspan><tspan
+         sodipodi:role="line"
+         x="374.5"
+         y="511.06207"
+         id="tspan8939">1100100</tspan><tspan
+         sodipodi:role="line"
+         x="374.5"
+         y="523.56207"
+         id="tspan8943">1000110</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="355.21973"
+       y="249.01013"
+       id="text8935-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="355.21973"
+         y="249.01013"
+         id="tspan8943-6">0110100101</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="210.21973"
+       y="116.01013"
+       id="text8935-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="210.21973"
+         y="116.01013"
+         id="tspan8943-2">Console.</tspan><tspan
+         sodipodi:role="line"
+         x="210.21973"
+         y="128.51013"
+         id="tspan9985">WriteLine();</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="202.79834"
+       y="405.51013"
+       id="text8935-7-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="202.79834"
+         y="405.51013"
+         id="tspan8943-6-6">0110100101</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="488.5"
+       y="271.87"
+       id="text10122"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan10124"
+         x="488.5"
+         y="271.87"
+         style="font-size:10px;font-style:italic;-inkscape-font-specification:Sans Italic">Запуск программы</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 3;stroke-dashoffset:0;marker-end:url(#Arrow1Mend)"
+       d="m 482.5,270.86999 -94,12"
+       id="path10126"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-8)"
+       d="m 219.98563,214.24512 0.009,77.24511"
+       id="path11518"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#rect2982-8-7-5"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#path2988-83"
+       inkscape:connection-end-point="d4"
+       transform="translate(166.5,44.862183)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-8)"
+       d="M 221.04372,485.44896 220.69447,546.529"
+       id="path11708"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g7725"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#g7734"
+       inkscape:connection-end-point="d4"
+       transform="translate(166.5,44.862183)" />
+  </g>
+</svg>

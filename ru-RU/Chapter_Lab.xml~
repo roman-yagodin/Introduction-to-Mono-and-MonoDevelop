@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Infpro_Intro.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-Infpro_Intro-Chapter-Lab">
+    <title>Лабораторная работа</title>
+    <formalpara>
+      <title>Цель работы</title>
+      <para>Познакомиться с интегрированной средой разработки приложений MonoDevelop, изучить структуру программного проекта и получить практические навыки работы с редактором кода, отладчиком и другими инструментами среды разработки. Получить представление об архитектуре платформы .NET / Mono,     языке программирования C#. Освоить основные приемы работы с виртуальной машиной, в которой развернута рабочая среда курса.</para>
+    </formalpara>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Execution_Order.xml">
+       <xi:fallback xmlns:xi="http://www.w3.org/2001/XInclude">
+          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Common_Content/Execution_Order.xml"/>
+        </xi:fallback>
+    </xi:include>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Tasks.xml">
+       <xi:fallback xmlns:xi="http://www.w3.org/2001/XInclude">
+          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Common_Content/Tasks.xml"/>
+        </xi:fallback>
+    </xi:include>
+    <section>
+        <title>Требования к отчету</title>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Report_Form.xml">
+	    <xi:fallback xmlns:xi="http://www.w3.org/2001/XInclude">
+		    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Common_Content/Report_Form.xml" />
+	    </xi:fallback>
+	    </xi:include>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Report_Content.xml">
+	    <xi:fallback xmlns:xi="http://www.w3.org/2001/XInclude">
+		    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Common_Content/Report_Content.xml" />
+	    </xi:fallback>
+	    </xi:include>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Report_Acceptance.xml">
+	    <xi:fallback xmlns:xi="http://www.w3.org/2001/XInclude">
+		    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Common_Content/Report_Acceptance.xml" />
+	    </xi:fallback>
+	    </xi:include>
+    </section>
+  </chapter>
