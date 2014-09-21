@@ -1,5 +1,3 @@
-Book source code is provided under the terms of GNU FDL 1.3 or later.
-
 GNU Free Documentation License
 ==============================
 
