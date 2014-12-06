@@ -4,22 +4,42 @@
 %BOOK_ENTITIES;
 ]>
 <chapter id="chap-MonoDevelop">
-  <title>Mono</title>
+  <title>MonoDevelop</title>
   <section>
     <title>Общие сведения</title>
+    <indexterm>
+      <primary>Интегрированная среда разработки</primary>
+      <secondary>Integrated development environment</secondary>
+      <tertiary>IDE</tertiary>
+    </indexterm>
     <formalpara>
       <title>Определение</title>
-      <para><indexterm>
-          <primary>Mono Framework</primary>
-          <secondary>Mono</secondary>
-        </indexterm><firstterm>Mono Framework</firstterm>&#160;- свободная с открытым кодом
-        кросс-платформенная реализация <firstterm>Microsoft .NET Framework</firstterm>, развиваемая
-        сообществом разработчиков. В создании и поддержке Mono активное участие принимала компания
-        Novell (до ее разделения и поглощения в 2011 году). В настоящее время поддержкой проекта
-        занимается стартап Xamarin, во главе которого стоит бывший инженер Novell и основатель
-        проекта Mono - Мигель Де Иказа (англ. <foreignphrase>Miguel De Icaza</foreignphrase>).
-      </para>
+      <para><firstterm>Интегрированная среда разработки</firstterm> (англ. Integrated development
+        environment, IDE) - система программных средств, используемая программистами для разработки
+        программных приложений. Часто говорят просто &quot;среда разработки&quot;, &quot;среда&quot;
+        или даже &quot;оболочка&quot; (shell).</para>
     </formalpara>
+    <indexterm>
+      <primary>MonoDevelop IDE</primary>
+      <secondary>MonoDevelop</secondary>
+    </indexterm>
+    <para><firstterm>MonoDevelop</firstterm> (читается &quot;моноде<emphasis role="underline"
+        >ве</emphasis>лоп&quot;) является свободно распространяемой кросс-платформенной средой
+      разработки с открытым исходным кодом для платформ Microsoft .NET и Mono. </para>
+    <note>
+      <para>Версия MonoDevelop для Microsoft Windows, содержащая некоторые проприетарные компоненты
+        для поддержки разработки приложений для мобильных платформ в настоящее время носит название
+        Xamarin Studio.</para>
+    </note>
+    <para><indexterm>
+        <primary>Mono Framework</primary>
+        <secondary>Mono</secondary>
+      </indexterm><firstterm>Mono Framework</firstterm>&#160;- свободная кросс-платформенная c
+      открытым кодом реализация <firstterm>Microsoft .NET Framework</firstterm>, разрабатываемая
+      сообществом. В создании и поддержке Mono активное участие принимала компания Novell (до ее
+      разделения и поглощения в 2011 году). В настоящее время поддержкой проекта занимается стартап
+      Xamarin, во главе которого стоит бывший инженер Novell и основатель проекта Mono - Мигель Де
+      Иказа (англ. <foreignphrase>Miguel De Icaza</foreignphrase>). </para>
     <para>Mono и .NET (читается &quot;dot net&quot; или, в русском варианте&#160;- &quot;точка
       нэт&quot;)&#160;- по сути представляют собой особые виртуальные машины, предоставляющие
       созданным для них приложениям унифицированную среду исполнения и множество полезных сервисов,
@@ -32,10 +52,10 @@
       идея кросс-платформенности безусловно была одной из основополагающих, и в Mono Framework она
       получила свое воплощение. </para>
     <para>Mono имеет реализации практически для всех распространенных семейств операционных систем,
-      таких как Microsoft Windows, Linux, Unix, Apple OS Х, существуют также мобильные версии
-      MonoDroid (для Android OS), MonoTouch (для Apple iOS), Tizen. Исполнимые файлы, построенные
-      для .NET и Mono, имеют единый двоичный формат, в результате чего приложения, построенные для
-      .NET зачастую безо всяких изменений работают в Mono, и наоборот.</para>
+      таких как [опять же] Microsoft Windows, Linux, Unix, Apple OS Х, существуют также мобильные
+      версии MonoDroind (для Android OS) и MonoTouch (для Apple iOS). Исполнимые файлы (exe),
+      построенные для .NET и Mono, имеют единый двоичный формат, в результате чего приложения,
+      построенные для .NET зачастую безо всяких изменений работают в Mono, и наоборот.</para>
     <para>MonoDevelop позволяет разрабатывать приложения для платформ .NET / Mono на следующих
       языках программирования:</para>
     <itemizedlist>
@@ -59,18 +79,2052 @@
           дополнений.</para>
       </listitem>
     </itemizedlist>
-  </section>
-  <section>
-    <title>Установка в Windows</title>
-    <para/>
+    <para>MonoDevelop также позволяет создавать приложения на языках, не относящихся к платформе
+      .NET / Mono, а именно: С, С++, Vala, Python. </para>
+    <note>
+      <para>Языки C#, VB.NET и F# созданы и развиваются компанией Microsoft. Остальные, такие как
+        Boo и IronPython - созданы и развиваются независимыми командами разработчиков, комитетами по
+        стандартизации и др.</para>
+    </note>
+    <para>Функциональность среды <application>MonoDevelop</application> расширяется за счет
+      использования так называемых дополнений (addins). В частности, таким образом может быть
+      добавлена в <application>MonoDevelop</application> поддержка новых языков программирования. </para>
+    <para>Приложения для Microsoft .NET в Windows разрабатывают обычно в среде
+        <application>Microsoft Visual Studio</application>. Это серьезный, требовательный к ресурсам
+      и очень дорогой программный продукт - фактически, лидер рынка. Бесплатными альтернативами ему
+      в Windows являются <application>Microsoft Visual Studio Express</application> и
+        <application>#Develop</application> (читается как &quot;Шарп-Девелоп&quot;).</para>
+    <para>Из недостатков <application>Visual Studio Express</application> нужно отметить большой
+      размер дистрибутива, ориентацию на один язык программирования (в версиях 2005, 2008, 2010) или
+      на один вид приложений (в версии 2012), упрощенный функционал. </para>
+    <para>Из недостатков <application>#Develop</application> можно отметить разве что возможность
+      запуска только на Windows и возможность создания приложения исключительно для Microsoft .NET. </para>
+    <para>Среда <application>MonoDevelop</application> начала свое развитие на основе кода проекта
+        <application>#Develop</application>, в последствии став абсолютно самостоятельной и
+      уникальной в своем роде интегрированной средой разработки. </para>
+    <itemizedlist>
+      <listitem>
+        <para>В отличие от <application>Microsoft Visual Studio</application> и
+            <application>#Develop</application>, cреда разработки
+            <application>MonoDevelop</application> полностью построена на Mono, и потому также может
+          работать в любой операционной системе, где есть Mono или .NET.</para>
+      </listitem>
+      <listitem>
+        <para><application>MonoDevelop</application> использует для построения графического
+          интерфейса пользователя библиотеки GTK# и XWT - также кросс-платформенные, в отличие от
+          стандартной для <application>Microsoft Visual Studio</application> и
+            <application>#Develop</application> библиотеки Windows Forms.</para>
+      </listitem>
+      <listitem>
+        <para>По функциональным возможностям <application>MonoDevelop</application> находится на том
+          же уровне, что и <application>#Develop</application>. Однако, в некоторых аспектах, в том
+          числе и по удобству использования, она опережает даже <application>Microsoft Visual
+            Studio</application>.</para>
+      </listitem>
+      <listitem>
+        <para>Обладает скромными (аналогично #Develop) системными требованиями и размерами
+          установочного пакета.</para>
+      </listitem>
+    </itemizedlist>
+    <para>В числе основных возможностей MonoDevelop можно отметить:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Автоматическое завершение кода, всплывающие подсказки, шаблоны и генерация
+          кода;</para>
+      </listitem>
+      <listitem>
+        <para>Автоматическое форматирование кода на основе пользовательских правил;</para>
+      </listitem>
+      <listitem>
+        <para>Рефакторинг кода (автоматические формальные преобразования кода);</para>
+      </listitem>
+      <listitem>
+        <para>Поддержка разных версий платформ Mono и .NET; </para>
+      </listitem>
+      <listitem>
+        <para>Совместимый <application>Microsoft Visual Studio</application> формат проектов;</para>
+      </listitem>
+      <listitem>
+        <para>Встроенный интерактивный отладчик;</para>
+      </listitem>
+      <listitem>
+        <para>Визуальный редактор графических интерфейсов GTK# (Stetic);</para>
+      </listitem>
+      <listitem>
+        <para>Встроенный компонент для отладки и создания библиотеки регулярных выражений;</para>
+      </listitem>
+      <listitem>
+        <para>Тестирование модулей (NUnit);</para>
+      </listitem>
+      <listitem>
+        <para>Расчет метрики кода и профайлинг; </para>
+      </listitem>
+      <listitem>
+        <para>Контроль версий (Subversion, Git, Bazaar);</para>
+      </listitem>
+      <listitem>
+        <para>Интеграция с отладочным веб-сервером <application>XSP</application> для
+          ASP.NET;</para>
+      </listitem>
+      <listitem>
+        <para>Средства работы с XML / XSL;</para>
+      </listitem>
+      <listitem>
+        <para>Подключение к базам данных, генерация LINQ-классов;</para>
+      </listitem>
+      <listitem>
+        <para>Возможность расширения функциональности среды разработки.</para>
+      </listitem>
+    </itemizedlist>
+    <para>Уникальные особенности среды <application>MonoDevelop</application> и обусловили ее выбор
+      в качестве интегрированной среды разработки для обучения программированию на языке C#.
+      Некоторые из указанных выше возможностей среды мы рассмотрим в данной главе.</para>
   </section>
   <section>
     <title>Установка в Debian GNU/Linux</title>
     <para/>
   </section>
+  <section>
+    <title>Создание нового решения</title>
+    <formalpara>
+      <title>Определение</title>
+      <para><firstterm>Программный проект</firstterm> (project)&#160;- независимый набор исходных
+        кодов и др. файлов, воспринимаемый средой разработки как единое целое и формирующий в
+        процессе <emphasis role="italic">компиляции</emphasis> единственную программу. </para>
+    </formalpara>
+    <formalpara>
+      <title>Определение</title>
+      <para><firstterm>Решение</firstterm> (solution)&#160;- контейнер для нескольких <emphasis
+          role="italic">программных проектов</emphasis>, предназначенных для решения отдельных
+        частей некоторой общей задачи. Решение может состоять из одного или нескольких программных
+        проектов, каждый из которых может быть написан на своем языке программирования.</para>
+    </formalpara>
+    <note>
+      <para>Все практические задания данного курса выполняются в среде виртуальной машины vLX,
+        построенной на базе Ubuntu Linux с рабочим столом LXDE. В этой виртуальной машине развернуто
+        [практически] готовое рабочее окружение, и в частности, <application>MonoDevelop
+          IDE</application>.</para>
+      <para>Для запуска виртуальной машины нужно открыть приложение <application>Oracle VM
+          VirtualBox</application> (в Windows см. в меню <menuchoice>
+          <guimenu>Пуск</guimenu>
+          <guisubmenu>Все программы</guisubmenu>
+        </menuchoice>), в появившемся окне выбрать машину <guilabel>vLX</guilabel>, затем нажать
+        кнопку <guibutton>Старт</guibutton>.</para>
+      <para>Логин для входа в систему: <literal>student</literal>, пароль:
+          <literal>LetMe1n!</literal> (1 перед n это единица).</para>
+    </note>
+    <para>Процесс создания программы в интегрированной среде разработки MonoDevelop начинается с
+      сознания нового решения, в котором автоматически создается новый программный проект.</para>
+    <para>Среду MonoDevelop можно запустить из меню <menuchoice>
+        <guimenu>LXDE</guimenu>
+        <guisubmenu>Программирование</guisubmenu>
+        <guimenuitem>MonoDevelop</guimenuitem>
+      </menuchoice>. Еще один вариант запуска - дважды щелкнуть по значку MonoDevelop на рабочем
+      столе.</para>
+    <para>Далее, в открывшемся окне выберем пункт <menuchoice>
+        <guimenuitem>File</guimenuitem>
+        <guimenuitem>New</guimenuitem>
+        <guimenuitem>Solution</guimenuitem>
+      </menuchoice> (см. <xref linkend="fig_new_solution_menu"/>).</para>
+    <note>
+      <para>Названия элементов интерфейса в тексте и на снимках экрана приводятся на английском -
+        перевод <application>MonoDevelop</application> на русский в разных версиях и дистрибутивах
+        Linux не завершен и не полон, и русские названия в новых версиях перевода могут отличаться
+        от существующих на момент разработки данного материала.</para>
+    </note>
+    <figure id="fig_new_solution_menu">
+      <title>Меню &quot;New Solution&quot;</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/new_solution.png" align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>Появится окно <guilabel>New Solution</guilabel> (новое решение), в котором нужно выбрать
+      тип программного проекта, который войдет в наше решение. В окне <guilabel>New
+        Solution</guilabel> выбираем раздел <guilabel>C#,</guilabel> тип проекта <guilabel>Console
+        Project</guilabel> (см. <xref linkend="fig_new_solution_dialog"/>):</para>
+    <figure id="fig_new_solution_dialog">
+      <title>Окно &quot;New Solution&quot;</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/new_console_project.png" align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>Как видите, возможных типов проектов довольно много - даже с учетом того, что поддержка
+      языков программирования в виртуальной машине установлена не полностью. На текущий момент, нас
+      будет интересовать проект типа ConsoleProject (консольное приложение), а в перспективе и
+      другие типы проектов на языке C#:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Console Project (проект консольного приложения)</para>
+      </listitem>
+      <listitem>
+        <para>Gtk# 2.0 Project (приложение с графическим интерфейсом)</para>
+      </listitem>
+      <listitem>
+        <para>Library (библиотека классов)</para>
+      </listitem>
+      <listitem>
+        <para>Web Application (веб-приложение ASP.NET)</para>
+      </listitem>
+      <listitem>
+        <para>ASP.NET MVC Project (веб-приложение ASP.NET MVC)</para>
+      </listitem>
+      <listitem>
+        <para>NUnit Library Project (библиотека тестов NUnit)</para>
+      </listitem>
+      <listitem>
+        <para>Moonlight Application Project (приложение Moonlight)</para>
+      </listitem>
+      <listitem>
+        <para>Moonlight Library Project (библиотека классов Moonlight)</para>
+      </listitem>
+    </itemizedlist>
+    <para>В поле <guilabel>Location</guilabel> указываем папку, в которой будут храниться файлы
+      проекта. В поле <guilabel>Name</guilabel> - имя проекта. Если в поле <guilabel>Solution
+        name</guilabel> ничего не править, то решение будет названо так же как и проект. Отмечаем
+      флажок <guilabel>Create directory for solution</guilabel> (создать папку для решения).</para>
+    <important>
+      <para>Очень важно, чтобы имя проекта / решения отвечало тем же правилам, что существуют для
+        имен переменных - имя должно начинаться с буквы или подчеркивания, продолжаться буквами,
+        цифрами или подчеркиванием, не должно содержать других символов (пробелов, тире и пр.) Буквы
+        в имени - только латинские! Пример правильных имен для решения и проектов:
+          <literal>MyLab1</literal>, <literal>Тask_1_12</literal>. Пример неправильных имен:
+          <literal>1-я Лаба</literal>, <literal>Задача № 1.12</literal>.</para>
+    </important>
+    <para>После нажатия на кнопку <guilabel>Create</guilabel> (создать) новое решение будет создано,
+      и откроется окно <firstterm>редактора исходного кода</firstterm> (source code editor) с кодом
+      простой программы. </para>
+    <figure>
+      <title>Редактор кода</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/main_cs.png" align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>В редакторе кода мы видим текст простейшей программы. Ее задача - вывести на экран фразу
+        <literal>&quot;Hello, world!&quot;</literal>.</para>
+    <para>Запустить программу на выполнение можно, выбрав в меню пункт <menuchoice>
+        <guimenuitem>Run</guimenuitem>
+        <guimenuitem>Debug</guimenuitem>
+      </menuchoice> или нажав кнопку <keycap>F5</keycap>. Соответствующую кнопку можно найти также
+      на панели инструментов: <guibutton>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata valign="middle" fileref="images/button_debug.png"/>
+          </imageobject>
+        </inlinemediaobject>
+      </guibutton></para>
+    <para>При запуске программы, на экране появится окно эмулятора терминала
+        <application>gnome-terminal</application> с заголовком <guilabel>&quot;MonoDevelop External
+        Console&quot;</guilabel> (внешняя консоль MonoDevelop), в котором мы увидим фразу
+        <literal>&quot;Hello, world!&quot;</literal></para>
+    <figure>
+      <title>Результат работы программы</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/hello_world.png" align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>Завершить работу программы и вернуться в редактор кода
+        <application>MonoDevelop</application> можно либо нажав любую клавишу на клавиатуре, либо
+      закрыв окно терминала.</para>
+    <note>
+      <para>Проверьте самостоятельно (в файловом менеджере, открыв папку, где хранятся файлы
+        решения), что получится, если сбросить флаг <guilabel>Create directory for
+          solution</guilabel> в окне <guilabel>New Solution</guilabel>.</para>
+    </note>
+  </section>
+  <section>
+    <title>Редактор исходного кода</title>
+    <section>
+      <title>Базовые возможности</title>
+      <indexterm>
+        <primary>Редактор исходного кода</primary>
+        <secondary>Редактор кода</secondary>
+        <see>Source code editor</see>
+      </indexterm>
+      <indexterm>
+        <primary>Source code editor</primary>
+        <secondary>Source editor</secondary>
+        <see>Редактор исходного кода</see>
+      </indexterm>
+      <para><firstterm>Редактор исходного кода</firstterm> (source code editor)&#160;- практически
+        главный компонент любой современной интегрированной среды разработки приложений. Насколько
+        удобными и полезными не были бы встроенные визуальные средства - именно хороший редактор
+        кода делает основной вклад в успешное завершение программного проекта.</para>
+      <para>По своей функциональности редактор исходного кода напоминает обычный текстовый редактор.
+        В частности, позволяет копировать, вырезать и вставлять части текста. Основные команды для
+        работы с текстом находятся в меню <menuchoice>
+          <guisubmenu>Edit</guisubmenu>
+        </menuchoice> среды разработки.</para>
+      <figure>
+        <title>Меню редактора кода</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/edit_menu.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Команды <guimenuitem>Cut</guimenuitem> (вырезать) <keycombo>
+          <keycap>Ctrl</keycap>
+          <keycap>X</keycap>
+        </keycombo>; <guimenuitem>Copy</guimenuitem> (копировать) <keycombo>
+          <keycap>Ctrl</keycap>
+          <keycap>C</keycap>
+        </keycombo> / <keycombo>
+          <keycap>Ctrl</keycap>
+          <keycap>Ins</keycap>
+        </keycombo>; <guimenuitem>Paste</guimenuitem> (вставить) <keycombo>
+          <keycap>Ctrl</keycap>
+          <keycap>V</keycap>
+        </keycombo> / <keycombo>
+          <keycap>Shift</keycap>
+          <keycap>Ins</keycap>
+        </keycombo>; <guimenuitem>Delete</guimenuitem> (удалить); <guimenuitem>Undo</guimenuitem>
+        (отмена) <keycombo>
+          <keycap>Ctrl</keycap>
+          <keycap>Z</keycap>
+        </keycombo> / <keycombo>
+          <keycap>Alt</keycap>
+          <keycap>BackSpace</keycap>
+        </keycombo>; <guimenuitem>Redo</guimenuitem> (вернуть); <guimenuitem>Select
+          All</guimenuitem>
+        <keycombo>
+          <keycap>Ctrl</keycap>
+          <keycap>A</keycap>
+        </keycombo> (выделить все) - имеют обычное назначение, как в любом текстовом редакторе. </para>
+      <para>Для навигации по тексту с помощью клавиатуры используются следующие сочетания клавиш
+        (также стандартные): </para>
+      <itemizedlist>
+        <listitem>
+          <para><keycap>PageUp</keycap>, <keycap>PageDown</keycap> - переместить курсор вниз / вверх
+            на 1 страницу текста.</para>
+        </listitem>
+        <listitem>
+          <para><keycap>Home</keycap>, <keycap>End</keycap> - переместить курсор в начало / в конец
+            строки.</para>
+        </listitem>
+        <listitem>
+          <para><keycombo>
+              <keycap>Ctrl</keycap>
+              <keycap>Home</keycap>
+            </keycombo>, <keycombo>
+              <keycap>Ctrl</keycap>
+              <keycap>End</keycap>
+            </keycombo> - переместить курсор в начало / в конец текста.</para>
+        </listitem>
+        <listitem>
+          <para><keycombo>
+              <keycap>Ctrl</keycap>
+              <keycap>RightArrow</keycap>
+            </keycombo>, <keycombo>
+              <keycap>Ctrl</keycap>
+              <keycap>LeftArrow</keycap>
+            </keycombo> - переместить курсор на одно слово вправо / влево.</para>
+        </listitem>
+      </itemizedlist>
+      <para>Перемещение курсора с зажатой клавишей <keycap>Shift</keycap> выделяет текст.</para>
+      <para>Клавиша <keycap>Ins</keycap> - переключает режим вставки (insert) / замены (overwrite).
+        Текущий режим вставки / замены отображается в строке статуса. Метка <guilabel>INS</guilabel>
+        обозначает режим вставки, режим <guilabel>OVR</guilabel> - режим замены.</para>
+      <figure>
+        <title>Индикатор режима вставки / замены</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/insert_mode.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Некоторые команды редактора кода доступны также из контекстного меню редактора. Его
+        можно вызвать, щелкнув <mousebutton>ПКМ</mousebutton> в рабочей области редактора.</para>
+      <figure>
+        <title>Контекстное меню редактора кода</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/edit_context_menu.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Команда <menuchoice>
+          <guisubmenu>Edit</guisubmenu>
+          <guisubmenu>Format</guisubmenu>
+          <guimenuitem>Toggle Line Comment(s)</guimenuitem>
+        </menuchoice>
+        <keycombo>
+          <keycap>Ctrl</keycap>
+          <keycap>Alt</keycap>
+          <keycap>C</keycap>
+        </keycombo> позволяет автоматически закомментировать выделенный блок текста, а также
+        раскомментировать его. </para>
+      <para>При комментировании, перед каждой строкой в выделенном блоке текста размещаются символы
+        однострочных комментариев <code>//</code> (для языков программирования, отличных от C#,
+        символы комментариев могут быть другими). Закомментированные строки исключаются из программы
+        (не анализируются компилятором). Если выполнить комманду <guimenuitem>Toggle Line
+          Comment(s)</guimenuitem> над закомментированными строками, символы комментариев будут
+        удалены.</para>
+      <para>Команда <guimenuitem>Indent Selection</guimenuitem> (увеличить отступ для выделения) <keycombo>
+          <keycap>Ctrl</keycap>
+          <keycap>Alt</keycap>
+          <keycap>End</keycap>
+        </keycombo> сдвигает выделенный текст вправо. Команда <guimenuitem>Unindent
+          Selection</guimenuitem> (уменьшить отступ для выделения) <keycombo>
+          <keycap>Ctrl</keycap>
+          <keycap>Alt</keycap>
+          <keycap>Home</keycap>
+        </keycombo> сдвигает выделенный текст влево. Эти команды используются для ручного
+        форматирования исходного кода. Чем больше сдвинут вправо блок кода, тем глубже в структуре
+        программы он расположен.</para>
+    </section>
+    <section>
+      <title>Настройка внешнего вида</title>
+      <para>Важной отличительной особенностью редактора исходного кода является использование так
+        называемой <firstterm>подсветки синтаксиса</firstterm> (syntax coloring, syntax
+        highlighting). Каждый синтаксический элемент программы (оператор (<code>if</code>,
+          <code>for</code>, <code>class</code> ...), константа (<code>1</code>, <code>&quot;Hello
+          World!&quot;</code>), комментарий ( <code>//</code> ), скобки и т.д. подсвечивается
+        (выделяется) особым образом с помощью цвета (текста и фона) и типа шрифта (обычный,
+        полужирный, курсив). </para>
+      <para>Подсветка синтаксиса значительно облегчает <emphasis role="italic"
+          >читабельность</emphasis> (readability) текстов программы, позволяет быстро находить
+        некоторые простые ошибки. Например, если вместо оператора ветвления <code>switch</code> вы
+        написали <code>swith</code>, то это слово <emphasis role="italic">не</emphasis> будет
+        подсвечено как другие ключевые слова (например <code>if</code>, <code>for</code>), поскольку
+        оно написано с ошибкой.</para>
+      <para>Пользователь может выбрать удобную для него цветовую схему подсветки синтаксиса,
+        выполнив команду <menuchoice>
+          <guisubmenu>Edit</guisubmenu>
+          <guimenuitem>Preferences</guimenuitem>
+        </menuchoice>. Далее, выбрать пункт <menuchoice>
+          <guisubmenu>Text Editor</guisubmenu>
+          <guimenuitem>Syntax Highlighting</guimenuitem>
+        </menuchoice> и в списке <guilabel>Color sheme</guilabel> указать нужный вариант. </para>
+      <figure>
+        <title>Выбор цветовой схемы (MonoDevelop 2.4)</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/syntax_highlighting.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Для текста в редакторе кода также можно выбрать другой шрифт (вид и размер). Делается
+        это также посредством вызова команды <menuchoice>
+          <guisubmenu>Edit</guisubmenu>
+          <guimenuitem>Preferences</guimenuitem>
+        </menuchoice> и далее в разделе <menuchoice>
+          <guisubmenu>Text Editor</guisubmenu>
+          <guimenuitem>General</guimenuitem>
+        </menuchoice> выбирается новый шрифт в поле <guilabel>Font</guilabel>. В приведенном ниже
+        примере мы выбрали вместо шрифта по умолчанию (взятого из настоек системы), шрифт
+          <literal>Nimbus Mono</literal>, кегль 12.</para>
+      <figure>
+        <title>Настройки редактора кода</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/set_font.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <important>
+        <para>В редакторе кода настоятельно рекомендуется использовать так называемые <emphasis
+            role="italic">моноширинные</emphasis> (monospace) или <emphasis role="italic"
+            >равноразмерные</emphasis> шрифты. Все символы в таких шрифтах одинаковой ширины, в т.ч.
+          и пробелы. Представленный таким шрифтом код программы легче читать, в нем удобнее
+          оформлять отступы.</para>
+      </important>
+      <note>
+        <para>Всего существует три <firstterm>больших семейства шрифтов</firstterm> (font families).
+          Это моноширинные (monospace), с засечками на границах линий символов (serif), и без
+          засечек (sans). Типичные представители этих семейств:</para>
+        <itemizedlist>
+          <listitem>
+            <para>Моноширинные: <literal>Courier New</literal>, <literal>Lucida Console</literal>,
+                <literal>Liberation Mono</literal></para>
+          </listitem>
+          <listitem>
+            <para>С засечками: <literal>Times New Roman</literal>, <literal>Georgia</literal>,
+                <literal>DejaVu Serif</literal></para>
+          </listitem>
+          <listitem>
+            <para>Без засечек: <literal>Arial</literal>, <literal>Tahoma</literal>,
+                <literal>Helvetica</literal>, <literal>Ubuntu</literal></para>
+          </listitem>
+        </itemizedlist>
+        <para>Часто, название большого семейства отражено в названии шрифта, например
+            <literal>DejaVu Sans Mono</literal> - это моноширинный шрифт без засечек.</para>
+        <para>Обычно считается, что шрифты с засечками лучше всего использовать для оформления
+          печатных документов, тогда как шрифты без засечек лучше смотрятся на экране
+          монитора.</para>
+      </note>
+    </section>
+    <section>
+      <title>Автодополнение кода</title>
+      <para>Одной из особенностей редактора кода, отличающей его от обычного текстового редактора,
+        является так называемое <firstterm>автодополнение кода</firstterm> (code completition). </para>
+      <para>Начнем набирать в редакторе слово <code>Сonsole</code>. Уже при вводе первой буквы
+        появится окно автодополнения кода, в котором нам предлагается выбрать один из возможных
+        вариантов продолжения. Мы можем продолжить набор с клавиатуры, либо выбрать готовый вариант
+        из списка.</para>
+      <para>Навигация по вариантам продолжения осуществляется с помощью стрелок
+          <keycap>Вверх</keycap> / <keycap>Вниз</keycap>, а также клавиш <keycap>PageUp</keycap> /
+          <keycap>PageDown</keycap> клавиатуре. Вставка выбранного варианта осуществляется при
+        нажатии <keycap>Enter</keycap> или <mousebutton>двойным щелчком ЛКМ</mousebutton> .</para>
+      <para>Далее, набрав в редакторе слово <code>Console</code> и поставив точку, мы снова увидим
+        окно автодополнения кода, в котором нам также предлагается выбрать один из возможных
+        вариантов продолжения кода - это список свойств и методов объекта
+        <code>Console</code>.</para>
+      <figure>
+        <title>Окно автодополнения кода</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/completition.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>При активном окне автодополнения мы можем продолжить набирать конструкцию (например,
+        набрав <keysym>W</keysym> после точки). Варианты в окне автодополнения будут отфильтрованы в
+        зависимости от того, встречается ли в них буква <keysym>W</keysym>.</para>
+      <figure>
+        <title>Фильтрация при автодополнении</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/completition_filter.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Фильтрация значительно сокращает количество вариантов в окне автодополнения, и среди них
+        легче найти нужный. </para>
+      <para>Отобразить окно автодополнения можно с помощью команды <menuchoice>
+          <guisubmenu>Edit</guisubmenu>
+          <guimenuitem>Show Completition Window</guimenuitem>
+        </menuchoice>
+        <keycombo>
+          <keycap>Ctrl</keycap>
+          <keycap>Space</keycap>
+        </keycombo>. Альтернативный метод - удалить &quot;точку&quot; после имени объекта, затем
+        набрать ее заново - окно автодополнения появится снова.</para>
+      <important>
+        <para>При вставке вариантов автодополнения быть внимательными - имена всех языковых объектов
+          в C# <emphasis role="italic">регистро-зависимы</emphasis>! Т.е. имена
+          <code>console</code>, <code>Console</code>, <code>CONSOLE</code> - обозначают три разных
+          языковых объекта!</para>
+      </important>
+    </section>
+    <section>
+      <title>Список параметров метода</title>
+      <para>После вставки <code>WriteLine</code> нужно набрать <code>(</code>. Требуется это потому,
+        что <code>Console.WriteLine()</code> является методом, и поэтому может принимать в качестве
+        параметров некоторые значения, которые как раз и записываются в круглых скобках после имени
+        метода, через запятую.</para>
+      <para>При наборе <code>(</code> после имени любого метода, на экране появится всплывающая
+        подсказка со списком параметров метода (parameter list). </para>
+      <figure>
+        <title>Список параметров и вариантов вызова метода</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/parameter_list.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Для многих методов предусмотрено несколько вариантов вызова. В случае
+          <code>Console.WriteLine()</code> их всего 19. Используя клавиши <keycap>Вверх</keycap> /
+          <keycap>Вниз</keycap> на клавиатуре можно перебрать доступные варианты, и ознакомиться с
+        доступной документацией. </para>
+      <para>Если вы проложите набор кода в круглых скобках метода, то среда разработки попытается
+        автоматически определить, к какому из вариантов вызова метода относится ваш код, и откроет
+        соответствующий раздел подсказки.</para>
+      <figure>
+        <title>Список параметров - автоматический выбор варианта вызова</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/parameter_list_match.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Форсировать отображение списка параметров на экране можно, выбрав команду <menuchoice>
+          <guisubmenu>Edit</guisubmenu>
+          <guimenuitem>Show Parameter List</guimenuitem>
+        </menuchoice>
+        <keycombo>
+          <keycap>Ctrl</keycap>
+          <keycap>Shift</keycap>
+          <keycap>Space</keycap>
+        </keycombo>.</para>
+    </section>
+    <section>
+      <title>Шаблоны кода</title>
+      <para><firstterm>Шаблоны кода</firstterm> (code templates) - фрагменты кода, представляющие в
+        обобщенной форме типичные варианты использования языковых конструкций, таких как условные
+        операторы, операторы цикла, их комбинации и др. Для получения работающего кода, вариативные
+        части шаблона нужно заполнить.</para>
+      <note>
+        <para>Иногда шаблоны кода называют также <firstterm>сниппетами</firstterm> (snippets).
+        </para>
+      </note>
+      <para>Например, мы хотим вставить в код программы оператор <code>for</code>. Для этого,
+        устанавливаем курсор в нужное место текста, и вызываем команду <menuchoice>
+          <guisubmenu>Edit</guisubmenu>
+          <guimenuitem>Insert Template</guimenuitem>
+        </menuchoice>. На экране появится окно вставки шаблона, в котором нужно выбрать нужный
+        шаблон и вставить его в текст, нажав любую из клавишей <keycap>Enter</keycap>,
+          <keycap>Space</keycap>, <keycap>Tab</keycap> на клавиатуре или <mousebutton>двойным
+          щелчком ЛКМ</mousebutton>.</para>
+      <figure>
+        <title>Окно вставки шаблона</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/templates_window.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>В окне редактора будет вставлен текст "for". Затем, нужно нажать клавишу
+          <keycap>Tab</keycap>, чтобы произвести вставку шаблона. </para>
+      <para>То, что получится, показано ниже (см. <xref linkend="fig_template_inserted"/>)</para>
+      <figure id="fig_template_inserted">
+        <title>Вставленный шаблон оператора for</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/templates_for_inserted.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Зеленым подсвечиваются <emphasis role="italic">вариативные части шаблона</emphasis> -
+        те, что предполагаются изменяемыми. В нашем случае это имя переменной цикла <code>i</code>,
+        и количество повторений <code>max</code>.</para>
+      <note>
+        <para>Использовать окно вставки шаблона и команду меню <menuchoice>
+            <guisubmenu>Edit</guisubmenu>
+            <guimenuitem>Insert Template</guimenuitem>
+          </menuchoice> не обязательно - достаточно набрать в тексте название шаблона и нажать
+            <keycap>Tab</keycap> - результат будет таким же.</para>
+      </note>
+      <para>Если применить команду вставки шаблона к выделенному тексту, то вместо простой вставки,
+        шаблон <emphasis role="italic">будет &quot;обернут&quot;</emphasis> вокруг выделенного
+        текста. В этом случае команда вставки шаблона меняет название на <menuchoice>
+          <guisubmenu>Edit</guisubmenu>
+          <guimenuitem>Surround With</guimenuitem>
+        </menuchoice>.</para>
+      <para>Например, мы хотим чтобы оператор <code>Console.WriteLine(&quot;Hello,
+          world!&quot;)</code> выполнился 5 раз. Для этого выделим строку, содержащую оператор
+          <code>Console.WriteLine(&quot;Hello, world!&quot;)</code>, и затем выполним вставку
+        шаблона оператора <code>for</code>. Получившийся результат показан ниже (см. <xref
+          linkend="fig_templates_surround"/>)</para>
+      <figure id="fig_templates_surround">
+        <title>Шаблон оператора for, &quot;обернутый&quot; вокруг Console.WriteLine()</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/template_surround.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Заменим имя переменной <code>max</code> на значение <code>5</code>. Получим следующий
+        код:</para>
+      <example>
+        <title>Конечный код, полученный с помощью вставки шаблона</title>
+        <programlisting language="C#"><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="extras/template_surround.cs" encoding="UTF-8" parse="text"/></programlisting>
+      </example>
+      <para>Запустим получившуюся программу на выполнение. Получим следующий результат (см. <xref
+          linkend="fig_template_results"/>).</para>
+      <figure id="fig_template_results">
+        <title>Результат работы программы</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/template_surround_results.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Использование шаблонов может серьезно ускорить процесс кодирования, поскольку
+        программист во многом избавлен от рутинной процедуры &quot;набора&quot; текста программы на
+        клавиатуре и совершает меньше ошибок - просто за счет того, что шаблон уже содержит
+        синтаксически правильные конструкции. Степень ускорения процесса кодирования значительно
+        зависит от качества разработанных шаблонов [и квалификации программиста, конечно].</para>
+      <para>В качестве альтернативы, вставить шаблон кода можно из специального окна
+          <guilabel>Toolbox</guilabel> (панель инструментов). Вызвать окно
+          <guilabel>Toolbox</guilabel> на экран можно с помощью команды <menuchoice>
+          <guisubmenu>View</guisubmenu>
+          <guisubmenu>Pads</guisubmenu>
+          <guimenuitem>Toolbox</guimenuitem>
+        </menuchoice>
+        <keycombo>
+          <keycap>Alt</keycap>
+          <keycap>Shift</keycap>
+          <keycap>B</keycap>
+        </keycombo>. Вставка шаблона из <guilabel>Toolbox</guilabel> осуществляется также при
+        нажатии <keycap>Enter</keycap> или <mousebutton>двойным щелчком ЛКМ</mousebutton>.</para>
+      <figure>
+        <title>Окно Toolbox со списком шаблонов кода</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/templates_toolbox.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <note>
+        <para>Обратите внимание на состояние кнопок в панели управления окна
+            <guilabel>Toolbox</guilabel>.</para>
+      </note>
+      <para>Среда разработки позволяет редактировать существующие и создать свои шаблоны кода.
+        Открыть редактор шаблонов можно, выбрав команду <menuchoice>
+          <guisubmenu>Edit</guisubmenu>
+          <guimenuitem>Preferences</guimenuitem>
+        </menuchoice> и затем выбрав раздел <menuchoice>
+          <guisubmenu>TextEditor</guisubmenu>
+          <guimenuitem>Code Temlpates</guimenuitem>
+        </menuchoice>. Внешний вид редактора шаблонов представлен на рисунке (см. <xref
+          linkend="fig_templates_editor"/>).</para>
+      <figure id="fig_templates_editor">
+        <title>Редактор шаблонов кода</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/templates_edit.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </section>
+    <section>
+      <title>Форматирование кода</title>
+      <para>Команда <menuchoice>
+          <guisubmenu>Edit</guisubmenu>
+          <guisubmenu>Format</guisubmenu>
+          <guimenuitem>Format Document</guimenuitem>
+        </menuchoice> выполняет автоматическое форматирование кода. При форматировании текст
+        программы подвергается стилистической обработке&#160;- например, удаляются лишние разрывы
+        строк, текст дополняется пробелами (для улучшения читабельности), делаются
+        &quot;правильные&quot; отступы на основании логической структуры программы и др. </para>
+      <para>Автоматическое форматирование улучшает качество исходного кода и может применяться как
+        перед формированием конечной версии текста программы, как и процессе работы над ней -
+        например, с помощью форматирования можно легко &quot;отловить&quot; ошибки, связанные с
+        неправильной структурой программы&#160;- непарными фигурными скобками и т.п.</para>
+      <para>Правила, по которым осуществляется автоматическое форматирование можно настроить под
+        свой &quot;стиль&quot; кодирования, выбрав команду <menuchoice>
+          <guisubmenu>Edit</guisubmenu>
+          <guimenuitem>Preferences</guimenuitem>
+        </menuchoice>. В появившемся окне выбрать пункт <menuchoice>
+          <guimenu>Source Code</guimenu>
+          <guisubmenu>Code Formatting</guisubmenu>
+          <guimenuitem>C# Source Code</guimenuitem>
+        </menuchoice>, затем нажать кнопку <guibutton>Edit</guibutton>на вкладке <guilabel>C#
+          Format</guilabel>.</para>
+      <figure>
+        <title>Правила форматирования</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/charp_formatting_md3_1.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <figure>
+        <title>Правила форматирования: отступы</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/charp_formatting_md3_2.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>На экране появится следующий диалог, в котором можно управлять правилами форматирования.
+        На снимке экрана показаны настройки форматирования, касающиеся отступов
+        (indentation).</para>
+      <para>Правила форматирования могут также применяться к тексту непосредственно в процессе
+        набора, если в настройках редактора <menuchoice>
+          <guisubmenu>Editor</guisubmenu>
+          <guimenuitem>Preferences</guimenuitem>
+        </menuchoice>, <menuchoice>
+          <guisubmenu>Text Editor</guisubmenu>
+          <guimenuitem>Behavior</guimenuitem>
+        </menuchoice> задана опция <guilabel>Enable on the fly code formatting</guilabel> (разрешить
+        форматирование кода &quot;на лету&quot;).</para>
+      <para>При разработке правил форматирования нужно следить за тем, чтобы эти правила не были
+        слишком &quot;агрессивными&quot;. Только в этом случае будет удобно пользоваться и
+        форматированием &quot;на лету&quot;. Возможно, есть смысл сделать отдельные наборы правил
+        (policies) для автоматического форматирования и форматирования на лету. В общем,
+        настраивайте под себя.</para>
+    </section>
+    <section>
+      <title>Навигация и поиск</title>
+      <para>В меню <guisubmenu>Search</guisubmenu> сосредоточены команды среды для поиска, замены и
+        навигации по исходным кодам и файлам проекта и решения.</para>
+      <figure>
+        <title>Меню Search</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/menu_search.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Механизм закладок (bookmarks) значительно облегчает навигацию по большим текстам
+        программы [пока что это не наш случай]. Команда <menuchoice>
+          <guisubmenu>Search</guisubmenu>
+          <guimenuitem>Toggle Bookmark</guimenuitem>
+        </menuchoice> устанавливает закладку на текущей строке текстового редактора (оранжевый
+        маркер). Если же закладка уже установлена, она сбрасывается. Команды <menuchoice>
+          <guisubmenu>Search</guisubmenu>
+          <guimenuitem>Previous Bookmark</guimenuitem>
+        </menuchoice> и <menuchoice>
+          <guisubmenu>Search</guisubmenu>
+          <guimenuitem>Next Bookmark</guimenuitem>
+        </menuchoice> позволяют перемещаться, соответственно, к предыдущей и следующей закладке.
+        Команды <menuchoice>
+          <guisubmenu>Search</guisubmenu>
+          <guimenuitem>Clear Bookmarks</guimenuitem>
+        </menuchoice> сбрасывает все ранее установленные закладки.</para>
+      <para>Команда <menuchoice>
+          <guisubmenu>Search</guisubmenu>
+          <guimenuitem>Go to Line</guimenuitem>
+        </menuchoice>
+        <keycombo>
+          <keycap>Ctrl</keycap>
+          <keycap>I</keycap>
+        </keycombo> позволяет перейти к строке с заданным номером.</para>
+      <para>Команда <menuchoice>
+          <guisubmenu>Search</guisubmenu>
+          <guimenuitem>Go to Matching Brace</guimenuitem>
+        </menuchoice>
+        <keycombo>
+          <keycap>Ctrl</keycap>
+          <keycap>B</keycap>
+        </keycombo> позволяет перейти от закрывающейся скобки (любого типа) к открывающейся и
+        наоборот. В случае большой вложенности скобок это может оказаться полезным. </para>
+      <para>Самостоятельно изучите возможности навигации и поиска, предоставляемые интегрированной
+        средой разработки MonoDevelop - см. команды в меню <guisubmenu>Search</guisubmenu>.
+        Используйте пункты меню и &quot;быстрые&quot; сочетания клавиш. </para>
+    </section>
+  </section>
+  <section>
+    <title>Структура проекта и решения</title>
+    <para>Вернемся к рассмотрению решений и проектов. </para>
+    <para>Программный проект в MonoDevelop (да и любой другой среде разработки) состоит из множества
+      файлов разного типа, формата и назначения. </para>
+    <para>В состав программного проекта обычно входят:</para>
+    <itemizedlist>
+      <listitem>
+        <para><emphasis role="italic">Файлы исходных кодов</emphasis>, содержащие собственно тексты
+          программ.</para>
+      </listitem>
+      <listitem>
+        <para><emphasis role="italic">Ресурсные файлы</emphasis>, например картинки, форма
+          пользовательского интерфейса, переводы сообщений интерфейса на другой язык и др.</para>
+      </listitem>
+      <listitem>
+        <para><emphasis role="italic">Файлы конфигурации</emphasis>, необходимые для правильной
+          обработки проекта средой, хранящие пользовательские настройки и др.</para>
+      </listitem>
+      <listitem>
+        <para><emphasis role="italic">Исполняемые файлы и библиотеки</emphasis> - собственно,
+          готовые программы, используемые в проекте либо создаваемые из исходных кодов в процессе
+          компиляции.</para>
+      </listitem>
+    </itemizedlist>
+    <para><firstterm>Исходный код программы</firstterm> (program source code) - это запись программы
+      на языке программирования, представленная в виде одного или нескольких файлов. Обычно это
+      текстовые файлы, которые имеют расширения, по которым можно понять, на каком языке
+      программирования записан код. Файлы исходных кодов на языке C# имеют расширение
+        <filename>.cs</filename> (сокращение от СSharp).</para>
+    <para>Рассмотрим структуру файловой системы для созданного нами простого решения. В каталоге
+        <filename>/home/student/Projects</filename> для нашего решения создана папка
+        <filename>MyFirstProgram</filename> (см. <xref linkend="fig_solution_folder"/>)</para>
+    <figure id="fig_solution_folder">
+      <title>Папка решения</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/solution_folder.png" align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>В этой папке расположен файл <filename>MyFirstProgram.sln</filename> и [еще одна] папка
+        <filename>MyFirstProgram</filename>&#160;- это уже папка проекта. </para>
+    <para>Файл <filename>MyFirstProgram.sln</filename> является <firstterm>файлом
+        решения</firstterm> (solution file). Как мы уже отмечали, одно решение может содержать в
+      себе сразу несколько проектов (projects). Поэтому, если мы отметили галочку <guilabel>Create
+        directory for solution</guilabel> в окне создания проекта, то ожидается, что проектов внутри
+      решения может быть много, и для каждого из них будет создана отдельная папка в папке решения
+        <filename>MyFirstProgram</filename>. Вспомним, что решение может содержать одновременно
+      проекты любых доступных типов, в т.ч. на разных языках программирования.</para>
+    <important>
+      <para>Все программы, создаваемые вами в рамках лабораторных работ, можно и нужно объединить в
+        одно решение&#160;- одно решение на одну работу, каждая задача&#160;- в отдельном
+        проекте.</para>
+    </important>
+    <para>В папке <filename>/home/student/Projects/MyFirstProgram/MyFirstProgram</filename>
+      расположены файлы проекта:</para>
+    <figure>
+      <title> Папка проекта</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/project_folder.png" align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>Файл <filename>MyFirstProgram.csproj</filename> - это собственно файл нашего проекта, в
+      котором сохраняются настройки проекта и информация о том, какие файлы составляют [включены в]
+      проект.</para>
+    <para>Файл <filename>Main.cs</filename> содержит исходный код программы. </para>
+    <para>В папку <filename>/bin</filename> помещаются готовые исполняемые файлы после компиляции. В
+        <filename>/bin/Debug</filename> сохраняются версии, содержащие информацию для отладки, в
+        <filename>/bin/Release</filename> сохраняются конечные версии исполнимых файлов,
+      предназначенные для передачи заказчику.</para>
+    <para>Файл <filename>AssembyInfo.cs</filename> содержит информацию о сборке, используемых
+      стандартных библиотеках и т.п. Подробнее понятие <firstterm>сборки</firstterm> (assembly)
+      рассмотрим в одной и следующих тем курса.</para>
+    <warning>
+      <para>Не изменяйте содержимое файла <filename>AssemblyInfo.cs</filename> вручную!</para>
+    </warning>
+    <para>Если же мы сбросим флаг <guilabel>Create directory for solution</guilabel> при создании
+      решения, то решение будет состоять всего из одного проекта, и файлы
+        <filename>MyFirstProgram.sln</filename> и <filename>MyFirstProgram.csproj</filename> будут
+      лежать в одной папке.</para>
+    <note>
+      <para>Понятно, что реальные решения и проекты могут включать в себя множество других файлов и
+        папок, кроме рассмотренных.</para>
+    </note>
+    <para>Управление структурой решения и проекта может быть осуществлено с помощью инструмента
+      (окна) <guilabel>Solution</guilabel>. В окне <guilabel>Solution</guilabel> отображается
+      структура решения (иногда говорят - &quot;дерево&quot; решения)&#160;- входящие в решение
+      проекты, папки, файлы, ссылки на используемые внешние сборки и др.</para>
+    <para>Обычно окно <guilabel>Solution</guilabel> пристыковано слева от рабочей области. Вызывать
+      его (если оно по каким-то причинам скрыто) можно из меню <menuchoice>
+        <guisubmenu>View</guisubmenu>
+        <guisubmenu>Pads</guisubmenu>
+        <guimenuitem>Solution</guimenuitem>
+      </menuchoice>
+      <keycombo>
+        <keycap>Alt</keycap>
+        <keycap>Shift</keycap>
+        <keycap>S</keycap>
+      </keycombo>. </para>
+    <figure>
+      <title>Окно Solution</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/solution_pad.png" align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>В существующее решение может быть добавлен дополнительный проект. Для этого достаточно
+      выбрать в окне <guilabel>Solution</guilabel> элемент <guimenuitem>Solution
+        MyFirstProgram</guimenuitem>, нажать <mousebutton>ПКМ</mousebutton> и, в появившемся
+      контекстном меню решения, выбрать команду <menuchoice>
+        <guisubmenu>Add</guisubmenu>
+        <guimenuitem>Add New Project</guimenuitem>
+      </menuchoice>. </para>
+    <figure>
+      <title>Добавление нового проекта в решение</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/solution_add_new_project.png" align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>Далее, на экране появится [несколько упрощенное] окно создания [добавления] проекта (см.
+        <xref linkend="fig_add_project"/>). В этом окне выбираем тип проекта, в поле
+        <guilabel>Name</guilabel> указывается имя нового проекта, в поле
+        <guilabel>Location</guilabel>&#160;- местоположение файлов (последнее оставьте как есть,
+      чтобы проект был создан в папке текущего решения).</para>
+    <figure id="fig_add_project">
+      <title>Окно добавления проекта</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/another_project.png" align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>После создания нового проекта, он отобразится в структуре решения.</para>
+    <figure>
+      <title>Структура решения из двух проектов</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/two_projects.png" align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>Заметим, что имя проекта <guilabel>MyFirstProgram</guilabel> выделено жирным. Это
+      означает, что данный проект выбран <emphasis role="italic">проектом, запускаемым по
+        умолчанию</emphasis>. Т.е., при выполнении команды <menuchoice>
+        <guisubmenu>Run</guisubmenu>
+        <guimenuitem>Debug</guimenuitem>
+      </menuchoice> будет запущен именно проект <guilabel>MyFirstProgram</guilabel>. </para>
+    <para>Если мы хотим запустить другой проект, для этого нужно: либо выбрать в <emphasis
+        role="italic">контекстном меню проекта</emphasis> (открываемом по щелчку
+        <mousebutton>ПКМ</mousebutton> по имени проекта) команду <guimenuitem>Debug
+        Item</guimenuitem>; либо установить данный проект как запускаемый по умолчанию - с помощью
+      команды <guimenuitem>Set As Startup Project</guimenuitem> в контекстном меню нужного
+      проекта.</para>
+    <para>Если нужно отобразить файлы решения или входящих в него проектов в файловом менеджере, то
+      необходимо выделить решение, проект или конкретный файл с помощью
+        <mousebutton>ПКМ</mousebutton>, а затем выбрать в контекстном меню команду <menuchoice>
+        <guimenuitem>Open Containing Folder</guimenuitem>
+      </menuchoice>.</para>
+    <figure>
+      <title>Открытие папки с файлами проекта</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/open_containing_folder.png" align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>Папка, содержащая выбранные файлы, будет открыта в стандартном файловом менеджере
+      системы.</para>
+    <important>
+      <para>Отметим, что простого факта существования файла в папке проекта / решения еще не
+        достаточно того, чтобы этот файл был включен в состав проекта / решения. </para>
+    </important>
+    <para>В окне <guilabel>Solution</guilabel> по-умолчанию отображаются только те файлы, что
+      включены в проект / решение. Команда (флаг) <menuchoice>
+        <guisubmenu>Display Options</guisubmenu>
+        <guimenuitem>Show All Files</guimenuitem>
+      </menuchoice> позволяет выбрать для каждого проекта и решения в целом режим, в котором
+      показываются все файлы в папке, а не только те, что включены в проект или решение. </para>
+    <figure>
+      <title>Флаг Show All Files</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/show_all_files.png" align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>Если мы установим для наших проектов и самого решения флаг <guimenuitem>Show All
+        Files</guimenuitem>, то результат будет таким, что в окне <guilabel>Solution</guilabel>
+      отобразятся все файлы, которые есть в соответствующих папках. Файлы, не включенные в проекты /
+      решение отобразятся полупрозрачными. </para>
+    <figure>
+      <title>Режим отображения всех файлов</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/solution_all_files.png" align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>Теперь, когда для проекта включена опция <guimenuitem>Show All Files</guimenuitem>, для
+      добавления существующих файлов в проект достаточно воспользоваться командой
+        <guimenuitem>Include To Project</guimenuitem> контекстного меню, щелкнув
+        <mousebutton>ПКМ</mousebutton> на нужный файл.</para>
+    <para>Другой способ добавить в проект новые или уже существующие файлы (более универсальный) -
+      использовать команды <menuchoice>
+        <guisubmenu>Add</guisubmenu>
+        <guimenuitem>New File</guimenuitem>
+      </menuchoice> и <menuchoice>
+        <guisubmenu>Add</guisubmenu>
+        <guimenuitem>Add Files</guimenuitem>
+      </menuchoice> контекстного меню проекта.</para>
+    <para>Удаление файлов из проекта выполняется командой <guimenuitem>Remove</guimenuitem>
+      контекстного меню проекта. При попытке удаления файла на экране появится следующий
+      диалог:</para>
+    <figure>
+      <title>Диалог подтверждения на удаление файла</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/remove_confirm.png" align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>Если в этом диалоге нажать кнопку <guibutton>Remove from Project</guibutton>, то файл
+      просто будет исключен из проекта, но останется на диске. Если нажать кнопку
+        <guibutton>Delete</guibutton>, то файл будет удален как из проекта, так и с диска. При
+      нажатии на <guibutton>Cancel</guibutton> команда удаления отменяется.</para>
+    <para>Соответствие основных типов файлов, входящих в состав проектов и решений на языке C#, их
+      расширениям приведено ниже (см. <xref linkend="table_file_types_base"/>)</para>
+    <table frame="all" pgwide="1" id="table_file_types_base">
+      <title>Основные типы файлов, входящие в состав проектов и решений на языке C#</title>
+      <tgroup cols="4">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="cgen1"/>
+        <thead>
+          <row>
+            <entry>Язык программирования</entry>
+            <entry>Расширение имени файла</entry>
+            <entry>Тип</entry>
+            <entry>Формат</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>C#</entry>
+            <entry>
+              <filename>.cs</filename>
+            </entry>
+            <entry>Исходные коды</entry>
+            <entry>Текстовый</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry>
+              <filename>.sln</filename>
+            </entry>
+            <entry>Файл решения</entry>
+            <entry>Текстовый</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry>
+              <filename>.csproj</filename>
+            </entry>
+            <entry>Файл проекта C#</entry>
+            <entry>XML</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry>
+              <filename>.exe</filename>
+            </entry>
+            <entry>Исполнимый файл (executable file)</entry>
+            <entry>Двоичный</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry>
+              <filename>.dll</filename>
+            </entry>
+            <entry>Динамическая библиотека (dynamic link library)</entry>
+            <entry>Двоичный</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry/>
+            <entry/>
+            <entry/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <para>Кроме этого, в состав проектов и решений могут входить и другие типы файлов (см. <xref
+        linkend="table_file_types_ext"/>). Конечно, этим список возможных типов файлов, входящих в
+      состав проектов и решений, не ограничивается.</para>
+    <table frame="all" id="table_file_types_ext">
+      <title>Другие типы файлов</title>
+      <tgroup cols="4">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <thead>
+          <row>
+            <entry>Язык программирования</entry>
+            <entry>Расширение имени файла</entry>
+            <entry>Тип </entry>
+            <entry>Формат</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>С</entry>
+            <entry><filename>.c</filename>, <filename>.h</filename></entry>
+            <entry>Исходные коды</entry>
+            <entry>Текстовый</entry>
+          </row>
+          <row>
+            <entry>XML</entry>
+            <entry>
+              <filename>.xml</filename>
+            </entry>
+            <entry>Файл в формате XML</entry>
+            <entry>XML</entry>
+          </row>
+          <row>
+            <entry>XSL</entry>
+            <entry><filename>.xsl</filename>, <filename>.xslt</filename></entry>
+            <entry>Скрипт XSL</entry>
+            <entry>XML</entry>
+          </row>
+          <row>
+            <entry>SQL</entry>
+            <entry>
+              <filename>.sql</filename>
+            </entry>
+            <entry>Скрипт SQL</entry>
+            <entry>Текстовый</entry>
+          </row>
+          <row>
+            <entry>HTML</entry>
+            <entry><filename>.htm</filename>, <filename>.html</filename></entry>
+            <entry>Веб-страница </entry>
+            <entry>Текстовый</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry>
+              <filename>.txt</filename>
+            </entry>
+            <entry>Текстовый файл</entry>
+            <entry>Текстовый</entry>
+          </row>
+          <row>
+            <entry>C++</entry>
+            <entry><filename>.cpp</filename>, <filename>.h</filename>,
+              <filename>.hpp</filename></entry>
+            <entry>Исходные коды</entry>
+            <entry>Текстовый</entry>
+          </row>
+          <row>
+            <entry>VB.NET</entry>
+            <entry>
+              <filename>.vb</filename>
+            </entry>
+            <entry>Исходные коды</entry>
+            <entry>Текстовый</entry>
+          </row>
+          <row>
+            <entry>Python / IronPython</entry>
+            <entry>
+              <filename>.py</filename>
+            </entry>
+            <entry>Исходные коды</entry>
+            <entry>Текстовый</entry>
+          </row>
+          <row>
+            <entry>Boo</entry>
+            <entry>
+              <filename>.boo</filename>
+            </entry>
+            <entry>Исходные коды</entry>
+            <entry>Текстовый</entry>
+          </row>
+          <row>
+            <entry>F#</entry>
+            <entry>
+              <filename>.fs</filename>
+            </entry>
+            <entry>Исходные коды</entry>
+            <entry>Текстовый</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry><filename>.pdb</filename>, <filename>.mdb</filename></entry>
+            <entry>База данных отладчика</entry>
+            <entry>Двоичный</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry>
+              <filename>.vbproj</filename>
+            </entry>
+            <entry>Файл проекта VB.NET</entry>
+            <entry>XML</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry>
+              <filename>.fsproj</filename>
+            </entry>
+            <entry>Файл проекта F#</entry>
+            <entry>XML</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry>
+              <filename>.resx</filename>
+            </entry>
+            <entry>Файл ресурсов в формате XML</entry>
+            <entry>XML</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry>
+              <filename>.resources</filename>
+            </entry>
+            <entry>Скомпилированный файл ресурсов</entry>
+            <entry>Двоичный</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry>
+              <filename>.config</filename>
+            </entry>
+            <entry>Файл настроек приложения</entry>
+            <entry>XML</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry>
+              <filename>.po</filename>
+            </entry>
+            <entry>Ресурсный файл переводчика</entry>
+            <entry>Текстовый</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry>
+              <filename>.mo</filename>
+            </entry>
+            <entry>Ресурсный файл переводчика (скомпилированный)</entry>
+            <entry>Двоичный</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry>
+              <filename>.pot</filename>
+            </entry>
+            <entry>Ресурсный файл переводчика (шаблон)</entry>
+            <entry>Текстовый</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry>
+              <filename>.sqlite</filename>
+            </entry>
+            <entry>База данных SQLite</entry>
+            <entry>Двоичный</entry>
+          </row>
+          <row>
+            <entry>T4</entry>
+            <entry>
+              <filename>.tt</filename>
+            </entry>
+            <entry>Текстовый шаблон Т4</entry>
+            <entry>Текстовый</entry>
+          </row>
+          <row>
+            <entry>Bash и др. скриптовые языки Unix / Linux</entry>
+            <entry>
+              <filename>.sh</filename>
+            </entry>
+            <entry>Скрипты оболочки</entry>
+            <entry>Текстовый</entry>
+          </row>
+          <row>
+            <entry>ASP.NET</entry>
+            <entry><filename>.aspx</filename>, <filename>.ascx</filename>,
+                <filename>.master</filename>, <filename>.global</filename>,
+                <filename>.asmx</filename></entry>
+            <entry>Страницы и элементы управления ASP.NET</entry>
+            <entry>XML</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <warning>
+      <para>При переносе результатов ваших работ на другую машину, копировании на флешку и др.
+        подобных операциях самый простой, надежный и удобный способ переноса - копировать папку
+        решения со всем ее содержимым. Переносить отдельные проекты и / или отдельные файлы
+        (например <filename>Main.cs</filename>) имеет смысл только в особых случаях - проект /
+        решение повреждены и не открываются средой разработки; слишком мало места на носителе - и
+        др. форсмажорных обстоятельствах.</para>
+    </warning>
+  </section>
+  <section>
+    <title>Компиляция и выполнение программы</title>
+    <section>
+      <title>Общие сведения</title>
+      <formalpara>
+        <title>Определение</title>
+        <para><firstterm>Компиляция</firstterm> (compilation) представляет собой процесс перевода
+          исходных текстов программы, написанных на языке программирования, на язык машинных
+          инструкций-кодов, понятных машине (процессору). Компиляция осуществляется специальной
+          программой, <firstterm>компилятором</firstterm> (compiler). </para>
+      </formalpara>
+      <para>Результатом [продуктом] компиляции является получение <firstterm>исполнимых
+          файлов</firstterm> (обычно имеющих расширение <filename>.exe</filename>) - фактически,
+        готовых программ, составленных из <firstterm>машинных инструкций</firstterm> (<emphasis
+          role="italic">машинных кодов</emphasis> или <emphasis role="italic">команд</emphasis>),
+        пригодных для исполнения на [реальном] процессоре. При запуске этих программ и их дальнейшем
+        использовании по назначению, пользователь получает желаемый сервис (результат вычислений,
+        например).</para>
+      <formalpara>
+        <title>Определение</title>
+        <para>Понятие <firstterm>сборки</firstterm> (assemly) в .NET / Mono очень близко к понятию
+            <emphasis role="italic">исполнимого файла</emphasis>. Хотя сборка может включать в себя,
+          кроме исполнимых файлов, файлы других типов, в первом приближении эти понятия можно
+          считать эквивалентными. Именно <emphasis role="italic">сборка</emphasis> является
+          результатом компиляции программного проекта в .NET / Mono.</para>
+      </formalpara>
+      <formalpara>
+        <title>Определение</title>
+        <para>Компиляция - это частный случай <firstterm>трансляции</firstterm>, обобщенного
+          процесса перевода текстов программ в инструкции, понятные компьютеру, с последующим
+          получением результата. Результатом компиляции являются исполнимые файлы, записанные на
+          языке машинных кодов, тогда как результатом другого типа трансляции -
+            <firstterm>интерпретации</firstterm>, - является собственно результат работы
+          программы.</para>
+      </formalpara>
+      <para>Программа-<firstterm>интерпретатор</firstterm> в принципе не пытается построить машинный
+        код, понятный процессору. Она просто разбирает (&quot;читает&quot;) исходный текст программы
+        и выполняет (интерпретирует) содержащиеся в нем инструкции.</para>
+      <note>
+        <para>Отличие компиляции от интерпретации легко проследить на примере аналогии с переводом
+          текста инструкции по сборке компьютера с английского языка на русский. В результате
+          &quot;компиляции&quot; мы получим текст инструкции на русском, а в результате
+          интерпретации - собранный компьютер.</para>
+      </note>
+      <para>Процесс интерпретации, как правило, более медленный, чем процесс исполнения полученных в
+        результате компиляции готовых машинных кодов на процессоре. С другой стороны, интерпретаторы
+        более гибки, например позволяют программам легко генерировать новый исходный код, который
+        затем также может исполнить интерпретатор.</para>
+      <para>Языки программирования можно условно поделить на две большие группы по используемому
+        типу трансляции. Это так называемые <emphasis role="italic">компилируемые</emphasis> или
+          <firstterm>статические</firstterm> (static), а также <emphasis role="italic"
+          >интерпретируемые</emphasis> или <firstterm>динамические</firstterm> (dynamic)
+        языки.</para>
+      <para>Например, язык C является классическим статическим языком, а PHP - динамическим. Однако
+        это совершенно не значит, что нельзя создать интерпретатор языка C или компилятор для PHP -
+        просто, это не очень нужно, поскольку именно в текущем виде оба эти языка и полезны
+        разработчикам.</para>
+      <para>Технологические особенности платформы .NET / Mono, такие как использование
+        промежуточного языка СIL и применение JIT-компиляции, позволяют эффективно реализовать на ее
+        основе самые разнообразные языки программирования - как статические, так и
+        динамические.</para>
+      <para>Такия языки платформы .NET / Mono, как C# и VisualBasic .NET являются статическими, а
+        такие как F#, IronPython, IronRuby - динамическими. Тем не менее, все они используют
+          <firstterm>общеязыковую среду исполнения</firstterm> CLR (common language runtime)
+        платформы .NET / Mono и весь спектр ее возможностей.</para>
+      <formalpara>
+        <title>Определение</title>
+        <para><firstterm>CIL</firstterm> (Common Intermediate Language, общий промежуточный язык, он
+          же MSIL, он же IL) - специальный высокоуровневый язык ассемблера, применяемый в платформе
+          .NET / Mono в качестве промежуточной формы записи программы - промежуточной между исходным
+          кодом на высокоуровневом языке программирования (типа C# или VB.NET) и языком машинных
+          кодов целевой аппаратной платформы (процессора).</para>
+      </formalpara>
+      <formalpara>
+        <title>Определение</title>
+        <para><firstterm>JIT-компиляция</firstterm> (just-in-time compilation, компиляция времени
+          выполнения) - особый вид компиляции, при котором CIL-код динамически (по частям, по мере
+          необходимости) в процессе исполнения программы компилируется [дальше] в машинный код
+          целевого процессора. </para>
+      </formalpara>
+      <para>Ввиду принципиальной близости CIL-кода к машинному коду, а также использованию
+        кеширования, процесс JIT-компиляции достаточно &quot;быстр&quot; и не требует больших
+        дополнительных ресурсов. При длительной работе исполнимого файла, записанного в двоичных
+        кодах CIL, показатели его производительности очень близки к показателям классическоого
+        машинного кода [а иногда и выше, поскольку при JIT-компиляции можно выполнить
+        машинно-зависимую оптимизацию исполнимого кода].</para>
+      <note>
+        <para>Понятно, что процесс JIT-компиляции в чем-то сходен с интерпретацией, поскольку
+          обработка кода происходит динамически, &quot;по требованию&quot;. Однако, результатом
+          работы JIT-компилятора является, все же, машинный код.</para>
+      </note>
+      <para>Язык C# также является статическим языком [некоторые динамические элементы появились
+        только в последних версиях]. Поэтому, при компиляции проекта на языке C# создается сборка (в
+        нашем примере это исполнимый файл <filename>MyFirstProgram.exe</filename>), которая содержит
+        программу - но не в машинных кодах процессора, а в двоичных кодах промежуточного языка CIL.
+        При запуске файла <filename>MyFirstProgram.exe</filename> на выполнение включается
+        JIT-компилятор, который преобразует двоичный код CIL в машинный код, и отправляет последний
+        процессору на исполнение (см. <xref linkend="fig_dotnet_compiler"/>).</para>
+      <formalpara>
+        <title>Определение</title>
+        <para><firstterm>Ассемблер</firstterm> (assembler) - это особый вид компилятора с
+          низкоуровневого языка программирования (&quot;языка ассемблера&quot;) на язык двоичных
+          машинных кодов. Сам процесс такого перевода называется <emphasis role="italic"
+            >ассемблированием</emphasis>.</para>
+      </formalpara>
+      <formalpara>
+        <title>Определение</title>
+        <para><firstterm>Дизассемблер</firstterm> - программа, выполняющая обратный перевод - с
+          языка машинных кодов на низкоуровневый язык ассемблера. Примером дизассемблера в .NET
+          является утилита <application>ildasm</application>, в Mono -
+            <application>monodis</application> (<application>cli-ildasm</application>).</para>
+      </formalpara>
+      <note>
+        <para>Обратим внимание на некоторую путаницу. Говоря &quot;ассемблер&quot;, в зависимости от
+          контекста, могут иметь ввиду: 1) язык двоичных машинных инструкций процессора; 3) язык
+          ассемблера - текстовую форму обозначения инструкций машинного языка; 3) собственно
+          программу-ассемблер.</para>
+      </note>
+      <para>В приведенном ниже примере вы можете видеть фрагмент кода на языке ассемблера CIL,
+        представляющего нашу программу-пример &quot;Hello, world!&quot;. Код получен в результате
+          <firstterm>дизассемблирования</firstterm> исполнимого файла
+          <filename>MyFirstProgram.exe</filename> с помощью утилиты
+          <application>monodis</application>.</para>
+      <example>
+        <title>Фрагмент программы &quot;Hello, world!&quot; на языке ассемблера CIL</title>
+        <programlisting><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="extras/hello_world.il" encoding="UTF-8" parse="text"/></programlisting>
+      </example>
+      <para>Ниже на рисунке представлена классическая схема получения исполнимых файлов из исходного
+        кода на примере языка С. Прямоугольниками показаны данные (в частности, файлы), кругами -
+        программы или компоненты, преобразующие данные из одной формы в другую. </para>
+      <figure id="fig_classic_compiler">
+        <title>Классическая схема компиляции для языка С</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/classic_compiler.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Из диаграммы видно, что программа-компилятор [c] языка С выполняет преобразование
+        исходных кодов на языке С в исходные коды на языке ассемблера. Затем, программа-ассемблер
+        выполняет <emphasis role="italic">ассемблирование</emphasis> - преобразует исходные коды на
+        языке ассемблера в объектный машинный код (уже содержащий машинные инструкции, но все еще не
+        пригодный для исполнения). Затем <emphasis role="italic">программа-компоновщик</emphasis>
+        (linker) связывает полученный объектный код с кодом внешних библиотек, и формирует конечный
+        (теперь исполнимый) машинный код. </para>
+      <para>Ассемблирование выделено в отдельный этап достаточно условно - объектный машинный код
+        обычно создается компилятором (ввиду тривиальности перевода с языка ассемблера на язык
+        машинных кодов). Но в некоторых ситуациях программа-ассемблер также используется.</para>
+      <para>Ниже приведена схема двухуровневой компиляции, характерная для языков платформы .NET /
+        Mono. Изучите ее и сравните с классической (<xref linkend="fig_classic_compiler"/>).</para>
+      <figure id="fig_dotnet_compiler">
+        <title>Схема компиляции для платформы .NET / Mono</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/dotnet_compiler.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Исполнимый машинный код, создаваемый JIT-компилятором из двоичного CIL-кода, не хранится
+        в файлах - он передается процессору на исполнение и помещается в специальный кеш машинного
+        кода. Ранее скомпилированные &quot;кусочки&quot; CIL-кода заново не компилируются -
+        результат просто берется из кеша машинного кода. Что касается системных библиотек, то они,
+        как правило, предварительно компилируются в машинные коды целевой платформы.</para>
+      <para>Оба эти фактора способствуют максимальной экономии ресурсов (прежде всего, процессорного
+        времени) на поддержание архитектурных функций платформы .NET / Mono, в результате чего и
+        достигается близкая к классическому машинному коду производительность сборок, составленных
+        из двоичного кода CIL.</para>
+    </section>
+    <section>
+      <title>Ошибки компилятора</title>
+      <para>В среде MonoDevelop компиляция (построение, сборка) проекта может быть выполнена при
+        выборе пункта меню <menuchoice>
+          <guisubmenu>Build</guisubmenu>
+          <guimenuitem>Build All</guimenuitem>
+        </menuchoice>
+        <keycap>F8</keycap>, кнопка <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="images/button_build_all.png"/>
+          </imageobject>
+        </inlinemediaobject>; или команды <menuchoice>
+          <guisubmenu>Build</guisubmenu>
+          <guimenuitem>Build <replaceable>имя проекта</replaceable></guimenuitem>
+        </menuchoice>
+        <keycap>F7</keycap>, кнопка <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="images/button_build_project.png"/>
+          </imageobject>
+        </inlinemediaobject>. Команда Build All компилирует все проекты в составе решения, команда
+        Build <replaceable>имя проекта</replaceable>&#160;- только текущий (открытый) проект.</para>
+      <para>В случае успешной компиляции, в папке <filename>/bin/Debug</filename> проекта появится
+        исполнимый файл, в нашем случае это <filename>MyFirstProgram.exe</filename>. </para>
+      <note>
+        <para>Исполнимый файл можно запустить на выполнение из файлового менеджера, открыв в нем
+          папку <filename>/bin/Debug</filename>, затем выбрать команду <menuchoice>
+            <guisubmenu>Инструменты</guisubmenu>
+            <guimenuitem>Открыть текущую папку в терминале</guimenuitem>
+          </menuchoice>
+          <keycap>F4</keycap>, затем набрать в окне терминала команду <command>mono
+            MyFirstProgram.exe</command> и нажать <keycap>Enter</keycap>.</para>
+      </note>
+      <note>
+        <para>Если мы сразу хотим запустить написанную программу на выполнение, то нужно выполнить
+          команду <menuchoice>
+            <guisubmenu>Run</guisubmenu>
+            <guimenuitem>Debug</guimenuitem>
+          </menuchoice>
+          <keycap>F5</keycap>. То же самое можно сделать с помощью соответствующей кнопки на панели
+          инструментов <inlinemediaobject>
+            <imageobject>
+              <imagedata fileref="images/button_debug.png"/>
+            </imageobject>
+          </inlinemediaobject>. В этом случае программа сначала будет скомпилирована, а затем
+          запущена на выполнение. </para>
+      </note>
+      <para>В процессе компиляции прежде всего выполняется проверка
+          <firstterm>синтаксической</firstterm> (формальной) правильности написанной программы.
+        Например, проверяется, чтобы количество открывающихся скобок в выражениях было равно
+        количеству закрывающихся и т.п. Другими словами, структура языковых конструкций проверяется
+        на соответствие <emphasis role="italic">правилам формальной грамматики</emphasis>
+        языка.</para>
+      <para>Далее, в процессе компиляции производится некоторые [очевидные] проверки
+          <firstterm>семантической</firstterm> (смысловой) правильности программы. Например, для
+        многих языков программирования важно, чтобы используемые в программе переменные были
+          <emphasis role="italic">объявлены</emphasis> перед их использованием. Также можно
+        проверить соответствие количества формальных и фактических параметров функций, т.е.
+        правильно <emphasis role="italic">y = sin (x)</emphasis>, но не <emphasis role="italic">y =
+          sin (x, z)</emphasis>.</para>
+      <para>О ходе компиляции и ее результатах, в частности, обо всех замеченных ошибках компилятор
+        сообщает пользователю (программисту) в окне <guilabel>Error List</guilabel>. </para>
+      <para>Это окно появляется автоматически в процессе компиляции, если в процессе компиляции
+        обнаружены ошибки. Окно <guilabel>Error List</guilabel> можно вызвать также через меню <menuchoice>
+          <guisubmenu>View</guisubmenu>
+          <guisubmenu>Pads</guisubmenu>
+          <guimenuitem>Error List</guimenuitem>
+        </menuchoice>
+        <keycombo>
+          <keycap>Alt</keycap>
+          <keycap>Shift</keycap>
+          <keycap>E</keycap>
+        </keycombo>.</para>
+      <figure>
+        <title>Окно Error List</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/error_list_no_errors.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>В нашем случае компиляция прошла успешно - на вкладке <guilabel>Build Output</guilabel>
+        (вывод построения) написано <literal>Build successful</literal> (построение успешно).</para>
+      <para>Теперь умышленно внесем в программу ошибку - уберем вторую кавычку в константе
+          <code>&quot;Hello, World!&quot;</code> (на рисунке это место показано стрелкой, показаны
+        символы перевода строки), и посмотрим, что скажет компилятор:</para>
+      <figure>
+        <title>Ошибка в программе</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/error1.svg" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>На вкладке <guilabel>Build Output</guilabel> в окне <guilabel>Error List</guilabel> мы
+        видим вывод компилятора, содержащий описание и локализацию обнаруженных им ошибок (вкладка
+          <guilabel>Build Output</guilabel> на рисунке расширена до предела).</para>
+      <figure>
+        <title>Вывод компилятора - найдены ошибки</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/error_list_output.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Анализировать текстовый вывод компилятора не самая благодарная задача, и разработчики
+          <application>MonoDevelop </application>пришли нам на помощь, добавив в окно
+          <guilabel>Error List</guilabel> более удобный функционал для работы над ошибками. </para>
+      <para>Если выключить закладку <guilabel>Build Output</guilabel>, то можно увидеть список
+        ошибок в более удобном формате. </para>
+      <figure>
+        <title>Список ошибок</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/error_list_errors.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Что же значат эти сообщения?</para>
+      <para>В первом сообщении, компилятор сообщает, что в строке 10 файла
+          <filename>Main.cs</filename> содержится ошибка, дословно &quot;Код ошибки CS1010: Перевод
+        строки внутри константы&quot;. Щелкнув дважды <mousebutton>ЛКМ</mousebutton> на сообщении об
+        ошибке, переходим к месту ошибки в тексте программы (подчеркнуто красным курсивом в
+        редакторе кода). Далее ошибка CS1010 повторяется до 14 строки, затем на 14 строке
+        проявляются еще две ошибки: &quot;Код ошибки CS1039: Незавершенный строковый литерал&quot; и
+        &quot;Код ошибки CS8025: Ошибка разбора текста&quot;.</para>
+      <note>
+        <para>Как вы уже заметили, сообщения об ошибках компилятора дублируются в редакторе кода
+          (текстовые метки справа от строк). При наведении курсора на метку ошибки появляется
+          всплывающее сообщение. Если текст в метке слишком длинный, метка ошибки отображается на
+          отдельной строке&#160;- реальных строк при это в текст не вставляется, поэтому удалять их
+          не пытайтесь.</para>
+      </note>
+      <para>Давайте подумаем. Ведь мы, вроде бы, внесли в программу только одну ошибку - как же их
+        стало 7? </para>
+      <para>На самом деле, нужно понять, что сообщения об ошибках, выдаваемые компилятором - это
+        просто сообщения об особых неправильных состояниях, в которых компилятор (как программа)
+        оказывается при попытке разобрать текст программы, содержащий ошибки.</para>
+      <para>Что же происходит внутри компилятора в процессе разбора нашей программы? А происходит
+        [примерно] следующее. </para>
+      <orderedlist>
+        <listitem>
+          <para>До 9 строки с оператором <code>Console.WriteLine()</code> все идет хорошо. </para>
+        </listitem>
+        <listitem>
+          <para>Затем, при разборе вызова <code>WriteLine()</code> компилятор обнаруживает первую
+            двойную кавычку строковой константы <code>&quot;Hello, world!&quot;</code>. Он знает,
+            что в двойных кавычках записываются строковые константы (литералы), и что ему следует
+            найти вторую (закрывающую) двойную кавычку правее по тексту - чтобы определить, где
+            заканчивается строковый литерал и начинаются следующие элементы кода. </para>
+        </listitem>
+        <listitem>
+          <para>Но - мы удалили из программы эту вторую двойную кавычку, и компилятор, двигаясь
+            вправо, вместо двойной кавычки обнаруживает символ перевода строки. Он также знает, что
+            в строковых константах символов перевода строки быть не должно, о чем и сообщает нам
+            первым сообщением - относительно строки 10. </para>
+        </listitem>
+        <listitem>
+          <para>Далее та же ситуация повторяется для строк 11, 12, 13 и 14 - конец строковой
+            константы все еще не найден, и в процессе его поиска компилятор натыкается на новые
+            переводы строк. </para>
+        </listitem>
+        <listitem>
+          <para>Строка 14 - последняя строка текста программы. Дальше ничего нет, и компилятор
+            подводит итоги, сообщая, что: 1) символа завершения строковой константы (вторую двойную
+            кавычку) найти так и не удалось, и 2) далее анализировать текст программы нет
+            возможности (он закончился)&#160; - но, при этом, существуют начатые (открытые) в
+            строках 3, 5, 7 конструкции, и они до сих пор не завершены - это блоки
+              <code>namespace</code>, <code>class</code> и метод <code>Main()</code> соответственно.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Весь текст программы после первой двойной кавычки, компилятор, в результате,
+            пытается воспринять как одну большую строковую константу, а не как текст программы - но
+            даже это у него не выходит.</para>
+        </listitem>
+      </orderedlist>
+     
+      <para>Как видите, даже в таком простом примере нужно провести некоторое осмысление того, что
+        же привело к появлению ошибки в программе, чтобы &quot;отловить&quot; и исправить
+        ошибку&#160;- ведь компилятор сообщил об ошибке совсем не там, где ее нужно исправить
+        (сообщения об ошибках в строках 10-14, а исправить нужно строку 9). Да и сообщения об
+        ошибках далеко не очевидны.</para>
+      <para>Сформулируем <emphasis role="italic">рекомендации по устранению синтаксических
+          ошибок</emphasis> (ошибок компиляции), в наиболее общей форме:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Следует различать <emphasis role="italic">место обнаружения ошибки</emphasis>
+            компилятором, и <emphasis role="italic">место ее возникновения</emphasis>. Как правило,
+            место возникновения ошибки расположено выше (иногда - значительно) по тексту -
+            компилятор далеко не всегда может сразу заметить, что &quot;что-то не так&quot;, а
+            анализирует он текст программы сверху вниз, слева направо.</para>
+        </listitem>
+        <listitem>
+          <para>Следует различать <emphasis role="italic">сообщения об ошибках
+              компилятора</emphasis> и <emphasis role="italic">причины возникновения этих
+              сообщений</emphasis> (собственно ошибки). Сообщения могут быть одинаковыми, а причины
+            - варьироваться. Одна и та же причина может вести к появлению нескольких
+            сообщений.</para>
+        </listitem>
+        <listitem>
+          <para>Следует различать <emphasis role="italic">подчеркивание элементов в тексте программы
+              красной волнистой линией</emphasis> и <emphasis role="italic">сообщения об ошибках
+              компилятора</emphasis>. Подчеркивает &quot;неправильный код&quot; красной волнистой
+            линией не компилятор, а среда разработки - у нее собственный анализатор кода (он проще,
+            но быстрее). Мнения среды разработки и компилятора могут не совпадать, но компилятор
+            всегда прав. </para>
+        </listitem>
+        <listitem>
+          <para>Всегда начинать исправлять ошибки с первой ошибки в списке! Остальных ошибок может
+            просто не существовать в природе, поскольку они &quot;проявились&quot; только благодаря
+            присутствию первой. <emphasis role="italic">&quot;У меня компилятор выдал 200
+              ошибок!..&quot;</emphasis>&#160;- скорее всего их 5-7.</para>
+        </listitem>
+        <listitem>
+          <para>Читать и переводить сообщения компилятора на русский, пытаться понять. Быть
+            внимательным к деталям. Учиться исправлять типичные ошибки. </para>
+        </listitem>
+        <listitem>
+          <para>Компилятор - очень простая машина. Вы умнее, поэтому просто спуститесь на его
+            уровень &quot;интеллекта&quot; - он-то не сможет подняться на ваш. Анализируйте текст
+            слева направо, сверху вниз, сверяясь со своими познаниями относительно языковых
+            конструкций.</para>
+        </listitem>
+        <listitem>
+          <para>Синтаксические ошибки - самый простой и тривиальный вид ошибок в программировании.
+            Все остальные виды гораздо сложнее отловить, тяжело исправить, а иногда и просто
+            обнаружить проблематично.</para>
+        </listitem>
+      </itemizedlist>
+      <para>Практически все сообщения об ошибках компилятора хорошо документированы. В справочной
+        системе <application>Mono Documentation Library</application> см. раздел <menuchoice>
+          <guimenu>Mono Documentation</guimenu>
+          <guisubmenu>Languages</guisubmenu>
+          <guisubmenu>C# Compiler Error Reference</guisubmenu>
+        </menuchoice>. Быстрый вызов справки по ошибке&#160;- <mousebutton>ПКМ</mousebutton> по
+        сообщению в окне <guilabel>Error List</guilabel>, затем в выпадающем меню выбираем
+          <guimenuitem>Show Error Reference</guimenuitem>.</para>
+      <figure>
+        <title>Быстрый вызов справки по ошибке</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/error_reference_show.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>После выполнения команды <guimenuitem>Show Error Reference</guimenuitem> откроется
+        справочная система <application>Mono Documentation Library</application> с информацией о
+        выбранной ошибке.</para>
+      <figure>
+        <title>Справка по ошибке CS1010</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/error_reference.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <note>
+        <para>К сожалению, в настоящее время нельзя рекомендовать приложение
+            <application>Monodoc</application> для повседневной работы со справочной системой.
+          Например, при его закрытии отображаются сообщения об ошибках, но главное -
+          оффлайн-документация редко обновляется. Поэтому желательно использовать соответствующую
+          онлайн-документацию на сайте <ulink url="http://docs.go-mono.com/"
+            >http://docs.go-mono.com/</ulink>. Кроме того, ее можно автоматически перевести на
+          русский, используя системы онлайн-перевода (Google Translator или др.)</para>
+      </note>
+      <para>Сообщения компилятора, отображаемые в окне <guilabel>Error List</guilabel>, делятся на
+        три группы: </para>
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="italic">Ошибки</emphasis> (errors), при наличии которых программа не
+            может быть успешно скомпилирована и запущена на выполнение.</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="italic">Предупреждения</emphasis> (warnings), при наличии которых
+            программа будет успешно скомпилирована и запущена, но потенциально может неправильно
+            работать.</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="italic">Сообщения</emphasis> (messages), носящие чисто
+            информационный характер.</para>
+        </listitem>
+      </itemizedlist>
+      <para>Кнопки <guibutton>Errors</guibutton>, <guibutton>Warnings</guibutton>,
+          <guibutton>Messages</guibutton> вверху окна <guilabel>Error List</guilabel> позволяют
+        фильтровать содержимое списка по этим группам сообщений. Если все три кнопки нажаты, то в
+        списке отображаются все сообщения компилятора.</para>
+    </section>
+    <section>
+      <title>Элементы отладки</title>
+      <para><emphasis role="italic">Программа во время исполнения</emphasis> (at runtime) - это
+        совсем не та же самая программа, что написана в виде отдельных операторов и конструкций в
+        редакторе кода (at design time). Исходный код программы - это статический объект (текст),
+        тогда как программа во время выполнения - это динамический вычислительный процесс
+        (порожденный кодом программы). И этот вычислительный процесс гораздо сложнее породившего его
+        исходного кода.</para>
+      <para>При выполнении программы могут возникать особые ситуации, называемые <firstterm>ошибками
+          времени выполнения</firstterm> (runtime errors) или, на жаргоне -
+          <firstterm>багами</firstterm> (bugs, англ. &quot;жуки&quot;). Эти ошибки имеют разную
+        природу, но всех их характеризует одна общая черта&#160;- они не определяются компилятором в
+        процессе сборки. Таким образом, программа, содержащая потенциальные ошибки времени
+        выполнения, будет скомпилирована и может быть запущена на выполнение.</para>
+      <para>По этой причине [в частности] нам нужны средства, которые позволят наблюдать за ходом
+        выполнения выполнения программы изнутри нее, а не просто видеть результат ее работы с
+        позиции пользователя. </para>
+      <para>Вы уже знаете, что запустить программу на выполнение можно, выбрав в меню пункт <menuchoice>
+          <guimenuitem>Run</guimenuitem>
+          <guimenuitem>Debug</guimenuitem>
+        </menuchoice> или нажав кнопку <keycap>F5</keycap>. При этом программа не просто
+        компилируется и запускается на выполнение - параллельно с ней запускается и специальная
+        программа - <firstterm>отладчик</firstterm> (debugger).</para>
+      <note>
+        <para>Для запуска программы без отладчика используется команда <menuchoice>
+            <guisubmenu>Run</guisubmenu>
+            <guimenuitem>Run</guimenuitem>
+          </menuchoice>
+          <keycombo>
+            <keycap>Ctrl</keycap>
+            <keycap>F5</keycap>
+          </keycombo>, кнопка на панели инструментов <inlinemediaobject>
+            <imageobject>
+              <imagedata fileref="images/button_run.png"/>
+            </imageobject>
+          </inlinemediaobject>.</para>
+      </note>
+      <para>Отладчик следит за выполнением запущенной программы на фоне (незаметно) до тех пор, пока
+        в ней не возникнет <firstterm>исключительная ситуация</firstterm> (exception) - внешний
+        атрибут многих видов багов. При возникновении исключительной ситуации, отладчик переводит
+        исполнение программы в <firstterm>интерактивный режим</firstterm> (interactive mode). В этом
+        режиме выполнение программы приостанавливается в позиции [как-бы до] возникновения
+        исключения. Далее, разработчик, используя инструменты среды разработки, получает возможность
+        рассмотреть состояние прерванной программы (текущие значения переменных и др.). Полученная
+        информация поможет найти причину проявления ошибки.</para>
+      <para>Смоделируем подобную ситуацию. Составим простую программу, в которой к целому числу
+          <code>a</code> равному <code>12</code>, прибавляется <code>5</code> и результат выводится
+        на экран. Также делается попытка считать значение длины строки, значение которой не
+        определено - при попытке получения значения <code>str.Length</code> будет вызываться
+        исключительная ситуация.</para>
+      <example>
+        <title>Пример для отладки</title>
+        <programlisting language="C#"><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="extras/exception.cs" encoding="UTF-8" parse="text"/></programlisting>
+      </example>
+      <para>При запуске этой программы на выполнение появится окно с сообщением о возникновении
+        [очень типичной] исключительной ситуации <code>NullReferenceException</code> -
+          <guilabel>Object reference in not set to an instance of object</guilabel> (в экземпляре
+        объекта не задана ссылка на объект).</para>
+      <figure>
+        <title>Окно исключительной ситуации</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/exception_window.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Закроем окно исключения, нажав кнопку <guibutton>Close</guibutton>.</para>
+      <para>Теперь обратим внимание на раскладку окон среды разработки. Она немного
+        изменилась&#160;- в частности, появились дополнительные окна снизу от редактора кода. Но
+        главное&#160;- строка 11 выделена ярко-желтым цветом, и слева появилась желтая стрелка. Это
+        индикатор текущей строки - именно той строки программы, на которой выполнение было
+        приостановлено.</para>
+      <figure>
+        <title>Текущая строка отладчика</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/debug_current_line.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Теперь обратим внимание на окно <guilabel>Locals</guilabel>. В этом окне отображаются
+        все локальные переменные программы, в том числе переменные <code>a</code> и
+        <code>str</code>. Видно, что на момент останова, значение <code>а</code> равно
+          <code>12</code>, а значение <code>str</code> равно <code>null</code>. </para>
+      <para>Окно <guilabel>Locals</guilabel> может быть вызвано на экран из меню <menuchoice>
+          <guisubmenu>View</guisubmenu>
+          <guisubmenu>Debug Windows</guisubmenu>
+          <guimenuitem>Locals</guimenuitem>
+        </menuchoice>
+        <keycombo>
+          <keycap>Ctrl</keycap>
+          <keycap>L</keycap>
+        </keycombo>.</para>
+      <figure>
+        <title>Значения переменных в окне Locals на момент возникновения исключения</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/debug_locals1.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Выйдем из отладчика, завершив выполнение программы - для этого нужно выполнить команду <menuchoice>
+          <guisubmenu>Run</guisubmenu>
+          <guimenuitem>Stop</guimenuitem>
+        </menuchoice>
+        <keycombo>
+          <keycap>Shift</keycap>
+          <keycap>F5</keycap>
+        </keycombo>, кнопка на панели инструментов <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="images/debug_stop.png"/>
+          </imageobject>
+        </inlinemediaobject>. </para>
+      <warning>
+        <para>Не перепутайте команду остановки отладчика с командами удаления варианта раскладки
+          окон и удаления текста! Обе обозначаются на панели инструментов похожими кнопками вида <inlinemediaobject>
+            <imageobject>
+              <imagedata fileref="images/button_delete.png"/>
+            </imageobject>
+          </inlinemediaobject>.</para>
+      </warning>
+      <para>Теперь изменим значение переменной <code>str</code> с <code>null</code> на
+          <code>&quot;Hello!&quot;</code>, как показано в примере&#160;- теперь обращение
+          <code>str.Length</code> не будет вызывать исключений при выполнении.</para>
+      <example>
+        <title>Пример для отладки</title>
+        <programlisting language="C#"><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="extras/debug.cs" encoding="UTF-8" parse="text"/></programlisting>
+      </example>
+      <para>Щелкнем <mousebutton>ЛКМ</mousebutton> по оранжевой линии слева от строки 10. Строка
+        будет выделена темно-красным, а на оранжевой линии появится красный маркер. Таким образом мы
+        установили <firstterm>точку останова</firstterm> (breakpoint) на строке 10.</para>
+      <figure>
+        <title>Точка останова на строке 10</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/breakpoint_set.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Снова запустим программу на выполнение в режиме отладки. Отладчик автоматически
+        приостановит программу и перейдет в интерактивный режим перед исполнением оператора
+          <code>string str = &quot;Hello!&quot;</code>, отмеченного точкой останова.</para>
+      <para>В режиме интерактивной отладки становятся доступны команды отладчика, в частности,
+        команда <menuchoice>
+          <guisubmenu>Run</guisubmenu>
+          <guimenuitem>Step Over</guimenuitem>
+        </menuchoice>
+        <keycap>F10</keycap> (шаг с обходом), кнопка на панели инструментов <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="images/button_step_over.png"/>
+          </imageobject>
+        </inlinemediaobject>. </para>
+      <para>Выполним команду <guimenuitem>Step Over</guimenuitem> в текущей ситуации - и отладчик
+        перейдет к выполнению строки 11. При этом переменная <code>str</code> получит значение
+          <code>&quot;Hello!&quot;</code>. Еще раз <guimenuitem>Step Over</guimenuitem> - и
+        выполнится оператор <code>Console.WriteLine(str.Length)</code>. Еще раз <guimenuitem>Step
+          Over</guimenuitem> - и выполнится оператор <code>a = a + 5</code>. Еще раз - и выполнится
+          <code>Console.WriteLine(a)</code>. </para>
+      <para>Изменение значений переменных программы при этом отображается в окне
+          <guilabel>Locals</guilabel> (проверьте также содержимое окна запущенного приложения).
+        Воспроизведите описанный процесс.</para>
+      <para>Таким образом, команда отладчика <guimenuitem>Step Over</guimenuitem> позволяет
+        организовать выполнение программы по отдельным шагам. </para>
+      <para>Если в конкретной ситуации вам нужно выйти из интерактивного режима отладки
+        (&quot;надоело&quot; исполнять программу по шагам), то нужно воспользоваться командой <menuchoice>
+          <guisubmenu>Run</guisubmenu>
+          <guimenuitem>Continue</guimenuitem>
+        </menuchoice>
+        <keycap>F5</keycap>. После этого исполнение программы продолжиться с текущей позиции в
+        обычном режиме.</para>
+      <para>Если процесс исполнения программы является длительным, то можно форсировать переход в
+        интерактивный режим отладки, используя команду <menuchoice>
+          <guisubmenu>Run</guisubmenu>
+          <guimenuitem>Pause</guimenuitem>
+        </menuchoice>
+        <keycombo>
+          <keycap>Ctrl</keycap>
+          <keycap>Break </keycap>
+        </keycombo>в среде разработки, кнопка на панели инструментов <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="images/button_pause.png"/>
+          </imageobject>
+        </inlinemediaobject>. При выполнении этой команды отладчик перейдет в интерактивный режим,
+        приостановив исполнение программы на том операторе, который исполнялся на момент поступления
+        команды <guimenuitem>Pause</guimenuitem>. </para>
+      <note>
+        <para>Удалить точку останова из программы можно так же, как ее установили - щелчком
+            <mousebutton>ЛКМ</mousebutton> по маркеру точки останова. Можно свободно устанавливать и
+          удалять точки останова как в интерактивном режиме, так и в обычном режиме исполнения
+          (последнее актуально для длительных и зацикленных программ).</para>
+      </note>
+      <note>
+        <para>Просмотреть значения переменных программы можно не только в окне
+            <guilabel>Locals</guilabel>. Достаточно просто навести курсор мыши на имя переменной в
+          интерактивном режиме отладки - на экране появится небольшое окно с информацией об этой
+          переменной.</para>
+      </note>
+      <para>Для эффективной работы отладчика ему, кроме набора инструкций в исполнимом файле
+        программы, требуется некоторая дополнительная информация. Поэтому, на начальном этапе
+        разработки, программа компилируется в особой <emphasis role="italic">отладочной конфигурации
+          компилятора</emphasis> (набор опций компилятора), в соответствии с которой компилятор
+        добавляет в исполнимые файлы необходимую для работы отладчика информацию. В результате,
+        отладочная версия исполнимого файла обычно больше по размеру и несколько медленнее, чем
+        можно ожидать.</para>
+      <para>В среде разработки <application>MonoDevelop</application> доступны две <emphasis
+          role="italic">конфигурации компилятора</emphasis>&#160;- <guilabel>Debug</guilabel>
+        (отладочная) и <guilabel>Release</guilabel> (конечная). </para>
+      <para>По умолчанию активна конфигурация <guilabel>Debug</guilabel>. При компиляции программы
+        исполнимые файлы этой конфигурации сохраняются в папке
+        <filename>/bin/Debug</filename>.</para>
+      <para>Если мы закончили отладку программы и готовы к тому, чтобы передать ее заказчику,
+        необходимо выбрать конфигурацию <guilabel>Release</guilabel> и заново скомпилировать
+        программу. </para>
+      <para>При компиляции в конфигурации <guilabel>Release</guilabel>, компилятор <emphasis
+          role="italic">не</emphasis> добавляет в исполнимый файл ничего лишнего, и проводит
+        дополнительную <emphasis role="italic">оптимизацию исполнимого кода</emphasis> (что было бы
+        не очень удобно для отладчика). В результате, исполнимые файлы, созданные в конфигурации
+          <guilabel>Release</guilabel>, максимально &quot;быстрые&quot; и компактные - т.е.
+        пригодные для практического применения в качестве готовых программ. Исполнимые файлы
+        конфигурации <guilabel>Release</guilabel> сохраняются в папке
+          <filename>/bin/Release</filename>.</para>
+      <para>Выбрать активную конфигурацию компилятора можно с помощью списка конфигураций в панели
+        инструментов среды разработки.</para>
+      <figure>
+        <title>Список конфигураций компилятора</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/active_config.png" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </section>
+  </section>
   <section condition="lesson">
     <title>Вопросы для самоконтроля</title>
     <orderedlist>
+      <listitem>
+        <para>Просуммируйте основные преимущества интегрированной среды разработки
+            <application>MonoDevelop</application> относительно продукта <application>Microsoft
+            Visual Studio</application>.</para>
+      </listitem>
+      <listitem>
+        <para>Просуммируйте основные недостатки интегрированной среды разработки
+            <application>MonoDevelop</application> относительно продукта <application>Microsoft
+            Visual Studio</application>.</para>
+      </listitem>
+      <listitem>
+        <para>Какие основные инструменты входят в состав продукта <application>MonoDevelop
+            IDE</application>?</para>
+      </listitem>
+      <listitem>
+        <para>Расскажите о том, что из себя представляют <application>.NET Framework</application> и
+            <application>Mono Framework</application>. Как эти продукты соотносятся между
+          собой?</para>
+      </listitem>
+      <listitem>
+        <para>Разработку на каких <emphasis role="italic">языках программирования</emphasis>
+          поддерживает <application>MonoDevelop</application>? Какие из них являются языками
+          платформы .NET / Mono? Может ли одно решение включать в себя проекты на разных
+          языках?</para>
+      </listitem>
+      <listitem>
+        <para>Какие типы <emphasis role="italic">программных проектов</emphasis> поддерживает среда
+          MonoDevelop? </para>
+      </listitem>
       <listitem>
         <para>Расшифруйте название языка CIL. Какими особенностями обладает и для чего применяется
           данный язык?</para>
@@ -115,6 +2169,60 @@
         <para>Какие языки платформы .NET / Mono являются статическими, а какие -
           динамическими?</para>
       </listitem>
+      <listitem>
+        <para>Какими дополнительными возможностями обладает редактор кода среды MonoDevelop по
+          сравнению с обычным текстовым редактором?</para>
+      </listitem>
+      <listitem>
+        <para>Для чего в редакторе кода применяется подсветка синтаксиса? </para>
+      </listitem>
+      <listitem>
+        <para>Как запустить на выполнение готовую программу, не используя (и не открывая) среду
+          разработки MonoDevelop?</para>
+      </listitem>
+      <listitem>
+        <para>Как перенести решение или проект целиком с одного компьютера на другой?</para>
+      </listitem>
+      <listitem>
+        <para>Какие три типа сообщений генерирует компилятор в процессе обработки исходного кода
+          программы?</para>
+      </listitem>
+      <listitem>
+        <para>Можно ли сказать, что сообщения компилятора точно и достоверно описывают существующие
+          в программе ошибки, их местонахождение? Объясните свое мнение.</para>
+      </listitem>
+      <listitem>
+        <para>Сформулируйте основные рекомендации по поиску и исправлению <emphasis role="italic"
+            >синтаксических ошибок</emphasis> в программе.</para>
+      </listitem>
+      <listitem>
+        <para>Расскажите, как хранятся решения и проекты в файловой системе?</para>
+      </listitem>
+      <listitem>
+        <para>Расскажите о назначении файлов с расширениями <filename>.cs</filename>,
+            <filename>.csproj</filename>, <filename>.sln</filename>, <filename>.exe</filename>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>Файлы каких основных групп включаются в программные проекты?</para>
+      </listitem>
+      <listitem>
+        <para>Что такое <emphasis role="italic">интерактивный режим отладки</emphasis> программы? В
+          каких случаях и с какой целью он используется?</para>
+      </listitem>
+      <listitem>
+        <para>Дайте определение жаргонному термину <emphasis role="italic">баг</emphasis>. Чем
+            <emphasis role="italic">баг</emphasis> отличается от исключительной ситуации в
+          программе?</para>
+      </listitem>
+      <listitem>
+        <para>В чем заключается принципиальное отличие программы как исходного кода от программы в
+          процессе выполнения? Какие последствия влечет за собой это отличие?</para>
+      </listitem>
+      <listitem>
+        <para>Расскажите об основных командах и инструментах среды, используемых в режиме
+          интерактивной отладки.</para>
+      </listitem>
     </orderedlist>
   </section>
   <bibliography>
@@ -131,9 +2239,72 @@
         MonoDevelop</ulink></bibliomisc>
     </bibliomixed>
       </bibliodiv>
-    <!--<bibliodiv><title>Книги</title><bibliomixed> <bibliomset relation="article"> <surname>Walsh</surname>, <firstname>Norman</firstname>. <title role="article">Introduction to Cascading Style Sheets</title>. </bibliomset> <bibliomset relation="journal"> <title>The World Wide Web Journal</title> <volumenum>2</volumenum><issuenum>1</issuenum>. <publishername>O'Reilly &amp; Associates, Inc.</publishername> and <corpname>The World Wide Web Consortium</corpname>. <pubdate>Winter, 1996</pubdate></bibliomset>. </bibliomixed></bibliodiv>-->
-    <!--<bibliodiv><title>Книги</title><biblioentry> <abbrev>AhoSethiUllman96</abbrev> <authorgroup><author><firstname>Alfred V.</firstname><surname>Aho</surname></author><author><firstname>Ravi</firstname><surname>Sethi</surname></author><author><firstname>Jeffrey D.</firstname><surname>Ullman</surname></author></authorgroup> <copyright><year>1996</year> <holder>Bell Telephone Laboratories, Inc.</holder></copyright> <editor><firstname>James T.</firstname><surname>DeWolf</surname></editor> <isbn>0-201-10088-6</isbn> <publisher> <publishername>Addison-Wesley Publishing Company</publishername> </publisher> <title>Compilers, Principles, Techniques, and Tools</title> </biblioentry><biblioentry xreflabel="Kites75"> <authorgroup><author><firstname>Andrea</firstname><surname>Bahadur</surname></author><author><firstname>Mark</firstname><surname>Shwarek</surname></author></authorgroup> <copyright><year>1974</year><year>1975</year> <holder>Product Development International Holding N. V.</holder> </copyright> <isbn>0-88459-021-6</isbn> <publisher> <publishername>Plenary Publications International, Inc.</publishername> </publisher> <title>Kites</title> <subtitle>Ancient Craft to Modern Sport</subtitle> </biblioentry></bibliodiv>-->
-    <!--<bibliodiv><title>Периодика</title><biblioentry> <abbrev>Walsh97</abbrev> <title>XML: Principles, Tools, and Techniques</title> <publisher> <publishername>O'Reilly &amp; Associates, Inc.</publishername> </publisher> <isbn>1085-2301</isbn> <editor><firstname>Dan</firstname><surname>Connolly</surname></editor> </biblioentry></bibliodiv>-->
+    <!-- <bibliodiv><title>Книги</title>
+    <bibliomixed>
+    <bibliomset relation='article'>
+      <surname>Walsh</surname>, <firstname>Norman</firstname>.
+      <title role='article'>Introduction to Cascading Style Sheets</title>.
+    </bibliomset>
+    <bibliomset relation='journal'>
+      <title>The World Wide Web Journal</title> 
+      <volumenum>2</volumenum><issuenum>1</issuenum>.
+      <publishername>O'Reilly &amp; Associates, Inc.</publishername> and
+      <corpname>The World Wide Web Consortium</corpname>.
+      <pubdate>Winter, 1996</pubdate></bibliomset>.
+      </bibliomixed>
+    
+      </bibliodiv>-->
+    
+    <!--
+    <bibliodiv><title>Книги</title>
+      
+      <biblioentry>
+        <abbrev>AhoSethiUllman96</abbrev>
+        <authorgroup>
+          <author><firstname>Alfred V.</firstname><surname>Aho</surname></author>
+          <author><firstname>Ravi</firstname><surname>Sethi</surname></author>
+          <author><firstname>Jeffrey D.</firstname><surname>Ullman</surname></author>
+        </authorgroup>
+        <copyright><year>1996</year>
+          <holder>Bell Telephone Laboratories, Inc.</holder></copyright>
+        <editor><firstname>James T.</firstname><surname>DeWolf</surname></editor>
+        <isbn>0-201-10088-6</isbn>
+        <publisher>
+          <publishername>Addison-Wesley Publishing Company</publishername>
+        </publisher>
+        <title>Compilers, Principles, Techniques, and Tools</title>
+      </biblioentry>
+      
+      <biblioentry xreflabel="Kites75">
+        <authorgroup>
+          <author><firstname>Andrea</firstname><surname>Bahadur</surname></author>
+          <author><firstname>Mark</firstname><surname>Shwarek</surname></author>
+        </authorgroup>
+        <copyright><year>1974</year><year>1975</year>
+          <holder>Product Development International Holding N. V.</holder>
+        </copyright>
+        <isbn>0-88459-021-6</isbn>
+        <publisher>
+          <publishername>Plenary Publications International, Inc.</publishername>
+        </publisher>
+        <title>Kites</title>
+        <subtitle>Ancient Craft to Modern Sport</subtitle>
+      </biblioentry>
+      
+    </bibliodiv>
+    <bibliodiv><title>Периодика</title>
+      
+      <biblioentry>
+        <abbrev>Walsh97</abbrev>
+          <title>XML: Principles, Tools, and Techniques</title>
+          <publisher>
+            <publishername>O'Reilly &amp; Associates, Inc.</publishername>
+          </publisher>
+          <isbn>1085-2301</isbn>
+          <editor><firstname>Dan</firstname><surname>Connolly</surname></editor>
+      </biblioentry>
+      
+    </bibliodiv> -->
    
   </bibliography>
 </chapter>
