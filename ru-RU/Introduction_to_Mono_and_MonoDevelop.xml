@@ -7,6 +7,8 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Book_Info.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Preface.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter_Mono.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter_Command_Line.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter_CSharp_Interactive.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter_MonoDevelop.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter_Lab.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Revision_History.xml"/>
