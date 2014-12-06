@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Infpro_Intro.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-MonoDevelop">
+  <title>Mono</title>
+  <section>
+    <title>Общие сведения</title>
+    <formalpara>
+      <title>Определение</title>
+      <para><indexterm>
+          <primary>Mono Framework</primary>
+          <secondary>Mono</secondary>
+        </indexterm><firstterm>Mono Framework</firstterm>&#160;- свободная с открытым кодом
+        кросс-платформенная реализация <firstterm>Microsoft .NET Framework</firstterm>, развиваемая
+        сообществом разработчиков. В создании и поддержке Mono активное участие принимала компания
+        Novell (до ее разделения и поглощения в 2011 году). В настоящее время поддержкой проекта
+        занимается стартап Xamarin, во главе которого стоит бывший инженер Novell и основатель
+        проекта Mono - Мигель Де Иказа (англ. <foreignphrase>Miguel De Icaza</foreignphrase>).
+      </para>
+    </formalpara>
+    <para>Mono и .NET (читается &quot;dot net&quot; или, в русском варианте&#160;- &quot;точка
+      нэт&quot;)&#160;- по сути представляют собой особые виртуальные машины, предоставляющие
+      созданным для них приложениям унифицированную среду исполнения и множество полезных сервисов,
+      недоступных в классическом программировании (программировании для реальной аппаратуры и
+      операционной системы). По многим признакам среда исполнения Mono / .NET аналогична виртуальной
+      машине Java. </para>
+    <para>.NET Framework нельзя, наверное, назвать по-настоящему кросс-платформенной средой,
+      поскольку разработан и используется Microsoft в операционных системах семейства Windows (в
+      т.ч. мобильных версий&#160;- .NET Compact Framework). Тем не менее, при проектировании .NET
+      идея кросс-платформенности безусловно была одной из основополагающих, и в Mono Framework она
+      получила свое воплощение. </para>
+    <para>Mono имеет реализации практически для всех распространенных семейств операционных систем,
+      таких как Microsoft Windows, Linux, Unix, Apple OS Х, существуют также мобильные версии
+      MonoDroid (для Android OS), MonoTouch (для Apple iOS), Tizen. Исполнимые файлы, построенные
+      для .NET и Mono, имеют единый двоичный формат, в результате чего приложения, построенные для
+      .NET зачастую безо всяких изменений работают в Mono, и наоборот.</para>
+    <para>MonoDevelop позволяет разрабатывать приложения для платформ .NET / Mono на следующих
+      языках программирования:</para>
+    <itemizedlist>
+      <listitem>
+        <para>C# (читается как &quot;Си-Шарп&quot;) - основной язык платформы .NET, во многом
+          является &quot;наследником&quot; таких популярных языков как C, C++ и Java, развивая и
+          переопределяя их свойства.</para>
+      </listitem>
+      <listitem>
+        <para>Visual Basic .NET - переработанный с &quot;нуля&quot; и только в чем-то похожий на
+          Microsoft Visual Basic 6.0 диалект - в отличие от предшественника, полностью
+          объектно-ориентированный.</para>
+      </listitem>
+      <listitem>
+        <para>CIL (Common Intermediate Language, &quot;общий промежуточный язык&quot;) -
+          своеобразный язык ассемблера .NET / Mono;</para>
+      </listitem>
+      <listitem>
+        <para>других языках .NET / Mono, в том числе: Boo, Java (IKVM), F# (функциональный язык
+          программирования), IronPython, IronRuby - в зависимости от установленных
+          дополнений.</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+  <section>
+    <title>Установка в Windows</title>
+    <para/>
+  </section>
+  <section>
+    <title>Установка в Debian GNU/Linux</title>
+    <para/>
+  </section>
+  <section condition="lesson">
+    <title>Вопросы для самоконтроля</title>
+    <orderedlist>
+      <listitem>
+        <para>Расшифруйте название языка CIL. Какими особенностями обладает и для чего применяется
+          данный язык?</para>
+      </listitem>
+      <listitem>
+        <para>В чем, по вашему мнению, заключается отличие высокоуровневого языка программирования
+          от низкоуровневого? Приведите примеры таких языков.</para>
+      </listitem>
+      <listitem>
+        <para>Дайте определения понятиям <emphasis role="italic">исполнимый файл</emphasis>,
+            <emphasis role="italic">сборка</emphasis>. В чем сходство и различие этих
+          понятий?</para>
+      </listitem>
+      <listitem>
+        <para>Что понимается под <emphasis role="italic">двухуровневой компиляцией</emphasis> в .NET
+          / Mono? Какими преимуществами обладает такая схема?</para>
+      </listitem>
+      <listitem>
+        <para>Расскажите о назначении таких программ, как <emphasis role="italic"
+            >компилятор</emphasis>, <emphasis role="italic">ассемблер</emphasis>, <emphasis
+            role="italic">линкер</emphasis>, <emphasis role="italic">дизассемблер</emphasis>. Какие
+          данные (файлы) они получают на вход и какие генерируют?</para>
+      </listitem>
+      <listitem>
+        <para>Опишите словами общую схему компиляции и исполнения приложений на платформе .NET /
+          Mono. </para>
+      </listitem>
+      <listitem>
+        <para>Расшифруйте понятие JIT-компиляции и опишите словами, как работает
+          JIT-компилятор.</para>
+      </listitem>
+      <listitem>
+        <para>Дайте определение понятиям <emphasis role="italic">компиляции</emphasis>, <emphasis
+            role="italic">интерпретации</emphasis>, <emphasis role="italic">трансляции</emphasis>.
+          Как соотносятся эти понятия?</para>
+      </listitem>
+      <listitem>
+        <para>В чем заключаются преимущества и недостатки статических и динамических языков
+          программирования?</para>
+      </listitem>
+      <listitem>
+        <para>Какие языки платформы .NET / Mono являются статическими, а какие -
+          динамическими?</para>
+      </listitem>
+    </orderedlist>
+  </section>
+  <bibliography>
+    <title>Список литературы</title>
+    <bibliodiv><title>Электронные ресурсы</title>
+    <bibliomixed>
+        <title>Официальный сайт проекта Mono</title>
+        <bibliomisc><ulink url="http://www.mono-project.com/">Официальный сайт проекта
+            Mono</ulink></bibliomisc>
+      </bibliomixed>
+    <bibliomixed>
+      <title>Официальный сайт проекта MonoDevelop</title>
+      <bibliomisc><ulink url="http://www.monodevelop.com/">Официальный сайта проекта
+        MonoDevelop</ulink></bibliomisc>
+    </bibliomixed>
+      </bibliodiv>
+    <!--<bibliodiv><title>Книги</title><bibliomixed> <bibliomset relation="article"> <surname>Walsh</surname>, <firstname>Norman</firstname>. <title role="article">Introduction to Cascading Style Sheets</title>. </bibliomset> <bibliomset relation="journal"> <title>The World Wide Web Journal</title> <volumenum>2</volumenum><issuenum>1</issuenum>. <publishername>O'Reilly &amp; Associates, Inc.</publishername> and <corpname>The World Wide Web Consortium</corpname>. <pubdate>Winter, 1996</pubdate></bibliomset>. </bibliomixed></bibliodiv>-->
+    <!--<bibliodiv><title>Книги</title><biblioentry> <abbrev>AhoSethiUllman96</abbrev> <authorgroup><author><firstname>Alfred V.</firstname><surname>Aho</surname></author><author><firstname>Ravi</firstname><surname>Sethi</surname></author><author><firstname>Jeffrey D.</firstname><surname>Ullman</surname></author></authorgroup> <copyright><year>1996</year> <holder>Bell Telephone Laboratories, Inc.</holder></copyright> <editor><firstname>James T.</firstname><surname>DeWolf</surname></editor> <isbn>0-201-10088-6</isbn> <publisher> <publishername>Addison-Wesley Publishing Company</publishername> </publisher> <title>Compilers, Principles, Techniques, and Tools</title> </biblioentry><biblioentry xreflabel="Kites75"> <authorgroup><author><firstname>Andrea</firstname><surname>Bahadur</surname></author><author><firstname>Mark</firstname><surname>Shwarek</surname></author></authorgroup> <copyright><year>1974</year><year>1975</year> <holder>Product Development International Holding N. V.</holder> </copyright> <isbn>0-88459-021-6</isbn> <publisher> <publishername>Plenary Publications International, Inc.</publishername> </publisher> <title>Kites</title> <subtitle>Ancient Craft to Modern Sport</subtitle> </biblioentry></bibliodiv>-->
+    <!--<bibliodiv><title>Периодика</title><biblioentry> <abbrev>Walsh97</abbrev> <title>XML: Principles, Tools, and Techniques</title> <publisher> <publishername>O'Reilly &amp; Associates, Inc.</publishername> </publisher> <isbn>1085-2301</isbn> <editor><firstname>Dan</firstname><surname>Connolly</surname></editor> </biblioentry></bibliodiv>-->
+   
+  </bibliography>
+</chapter>

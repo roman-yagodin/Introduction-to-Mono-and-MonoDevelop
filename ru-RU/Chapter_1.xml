@@ -3,8 +3,8 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "Infpro_Intro.ent">
 %BOOK_ENTITIES;
 ]>
-<chapter id="chap-Infpro_Intro-Test_Chapter">
-  <title>Знакомство с интегрированной средой разработки MonoDevelop</title>
+<chapter id="chap-Mono">
+  <title>Mono</title>
   <section>
     <title>Общие сведения</title>
     <indexterm>
@@ -179,6 +179,10 @@
     <para>Уникальные особенности среды <application>MonoDevelop</application> и обусловили ее выбор
       в качестве интегрированной среды разработки для обучения программированию на языке C#.
       Некоторые из указанных выше возможностей среды мы рассмотрим в данной главе.</para>
+  </section>
+  <section>
+    <title>Установка в Debian GNU/Linux</title>
+    <para/>
   </section>
   <section>
     <title>Создание нового решения</title>

@@ -7,6 +7,7 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Book_Info.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Preface.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter_1.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter_2.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter_Lab.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Revision_History.xml"/>
   <index/>
